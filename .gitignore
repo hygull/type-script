@@ -1,0 +1,8 @@
+*.exe
+.DS_Store
+*.cpp
+*.c
+*.py
+*.java
+*.go
+*.bat

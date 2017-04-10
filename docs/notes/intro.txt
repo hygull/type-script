@@ -1,0 +1,9 @@
+TypeScript lets you write JavaScript the way you really want to. 
+
+TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. 
+
+TypeScript is pure object oriented with classes, interfaces and statically typed like C# or Java.
+
+The popular JavaScript framework Angular 2.0 is written in TypeScript. 
+
+Mastering TypeScript can help programmers to write object-oriented programs and have them compiled to JavaScript, both on server side and client side.
