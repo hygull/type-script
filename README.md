@@ -1,11 +1,17 @@
 # TypeScript
-  ==========
+---
 A typed superset of JavaScript
-Designer : Anders Hejlsberg
-Features : Statically typed, Portable, It is JavaScript
 
-ECMASCRIPT5 + ECMASCRIPT6 + Additional features ==> TypeScript
+###### Designer 
+Anders Hejlsberg
 
+###### Features
+Statically typed, Portable, It is JavaScript
+
+###### TypeScript equals
+ECMASCRIPT5 + ECMASCRIPT6 + Additional features 
+
+###### Features
 Supports Inheritance & Interface
 
 ###### Components
