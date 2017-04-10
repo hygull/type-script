@@ -54,7 +54,7 @@ hello.js	hello.ts
 ```
 
 ###### TypeScript Plugin
-[For sublime text 3](https://packagecontrol.io/packages/TypeScript)
+[for sublime text 3](https://packagecontrol.io/packages/TypeScript)
 
 ###### Designer 
 Anders Hejlsberg
@@ -81,6 +81,16 @@ When a TypeScript script gets compiled, there is an option to generate a declara
 file (with the extension .d.ts) that functions as an interface to the components in the
 compiled JavaScript. 
  
+```
+admins-MacBook-Pro-3:src admin$ tsc -d hello.ts
+
+admins-MacBook-Pro-3:src admin$ ls
+hello.d.ts	hello.js	hello.ts
+
+admins-MacBook-Pro-3:src admin$ cat hello.d.ts 
+declare function hello(): void;
+```
+
 ###### Typescript playground
 [Run typescript code here](https://www.typescriptlang.org/play/)
 
