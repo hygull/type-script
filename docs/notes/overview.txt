@@ -2,7 +2,10 @@ JavaScript was introduced as a language for the client side.
 
 The development of Node.js has marked JavaScript as an emerging server-side technology too. 
 
-However, as JavaScript code grows, it tends to get messier, making it difficult to maintain and reuse the code. Moreover, its failure to embrace the features of Object Orientation, strong type checking and compile-time error checks prevents JavaScript from succeeding at the enterprise level as a full-fledged server-side technology. 
+However, as JavaScript code grows, it tends to get messier, making it difficult to 
+maintain and reuse the code. Moreover, its failure to embrace the features of Object 
+Orientation, strong type checking and compile-time error checks prevents JavaScript 
+from succeeding at the enterprise level as a full-fledged server-side technology. 
 
 TypeScript was presented to bridge this gap.
 
@@ -19,4 +22,7 @@ Components
 
 When a TypeScript script gets compiled, there is an option to generate a declaration file (with the extension .d.ts) that functions as an interface to the components in the compiled JavaScript. 
 
-The concept of declaration files is analogous to the concept of header files found in C/C++. The declaration files (files with .d.ts extension) provide intellisense for types, function calls, and variable support for JavaScript libraries like jQuery, MooTools, etc.
+The concept of declaration files is analogous to the concept of header files found in C/
+C++. The declaration files (files with .d.ts extension) provide intellisense for types, 
+function calls, and variable support for JavaScript libraries like jQuery, MooTools, 
+etc.
