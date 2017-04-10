@@ -94,4 +94,15 @@ declare function hello(): void;
 ###### Typescript playground
 [Run typescript code here](https://www.typescriptlang.org/play/)
 
+---
+
+# Notes
+###### A TypeScript program is composed of the following:
+###### 1) Modules
+###### 2) Comments
+###### 3) Functions
+###### 4) Variables
+###### 5) Statements and Expressions
+
+
 
