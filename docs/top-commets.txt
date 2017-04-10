@@ -1,7 +1,7 @@
 /*
-	{
-		"created_at" : "2017",
-		"aim_of_script" : "",
-		"coded_by" : "Rishikesh Agrawani",
-	}
+    {
+        "created_at" : "2017",
+        "aim_of_script" : "",
+        "coded_by" : "Rishikesh Agrawani",
+    }
 */
