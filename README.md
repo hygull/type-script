@@ -104,5 +104,15 @@ declare function hello(): void;
 ###### 4) Variables
 ###### 5) Statements and Expressions
 
+###### Compiler flags :  --declaration, --out, --watch, --help, --removeComments, --target, --module.
+
+###### Identifiers(valid) : $name, _name, rishi67, rishi_1, Rishi_1 (TypeScript is case sensitive).
+
+###### // is used for single line comment &  /**/ is used for multiline comment.
+
+###### According to Grady Brooch, every object must have 3 features, 1) State, 2) Behaviour, 3) Identity
+
+###### Methods facilitate communication between objects.
+
 
 
