@@ -141,7 +141,7 @@ or
 1)	Install Node.js from [here](https://nodejs.org/en/download/)
 2)	npm install -g typescript  (Open terminal and run this command)
 3)	Create TypeScript file  (File name's extension should be ts, eg. you created hello.ts)
-4)	tsc hello.js   (Compile TypeScript file using tsc command, it will compile to hello.js on successful compilation)
+4)	tsc hello.ts   (Compile TypeScript file using tsc command, it will compile to hello.js on successful compilation)
 5)	node hello.js  (Run js file using node command)
 
 
