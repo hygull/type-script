@@ -115,7 +115,8 @@ declare function hello(): void;
 ###### $name, _name, rishi67, rishi_1, Rishi_1 (TypeScript is case sensitive).
 
 #### Comments
-###### //<comment_line>  is used for single line comment &  /* <comment_lines> */  is used for multiline comment.
+###### // is used for single line comment 
+###### /**/  is used for multiline comment
 eg.
 ```javascript
 	//created_on : 14 March 2017
@@ -145,7 +146,37 @@ or
 5)	node hello.js  (Run js file using node command)
 
 #### Difference between let & var keywords
-Visit [here] (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) to read about the difference. It is nice.
+Visit [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) to read about the difference. It is nice.
+
+#### The Any Type
+It is the super type of all the types in TypeScript
+
+#### All built-in types in TypeScript (There is Integer type in TypeScript and JavaScript)
+1)	Number	:	Double precision 64 bit floating point values(used to represent integers and fractions) 	
+2)	String	:	Sequence of unicode characters
+3)	Boolean	:	true/false
+4)	Void 	:	Used as function's return type
+5)	Null	:	Used to represent an intentional absence of object's value
+6)	Undefined : It denotes a value given to all uninitialized variables
+
+#### Are null and undefined same?
+They are not same.
+
+#### Variable
+A named space in the memory that stores values.
+
+#### Declaration of variables in TypeScript (4 ways)
+```javascript
+var name : string = "Rishikesh";   //type & value in 1 statement, here string is type-annotaion
+
+var name : string; 	//only type, in this case name will be set to undefined
+
+var name = "Rishikesh"; 	//only value, in this case name's type will be set to any
+
+var name;  //neither type nor value, in this case name's type will be set to any and value willl be set to undefined
+```
+
+
 
 
 
