@@ -144,4 +144,8 @@ or
 4)	tsc hello.ts   (Compile TypeScript file using tsc command, it will compile to hello.js on successful compilation)
 5)	node hello.js  (Run js file using node command)
 
+#### Difference between let & var keywords
+Visit [here] (https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) to read about the difference. It is nice.
+
+
 
