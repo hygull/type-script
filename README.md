@@ -51,6 +51,9 @@ admins-MacBook-Pro-3:src admin$ tsc hello.ts
 
 admins-MacBook-Pro-3:src admin$ ls
 hello.js	hello.ts
+
+admins-MacBook-Pro-3:src admin$ node hello.js
+Hello world
 ```
 
 ###### TypeScript Plugin
@@ -97,6 +100,7 @@ declare function hello(): void;
 ---
 
 # Notes
+#### TypeScript Program
 ###### A TypeScript program is composed of the following:
 ###### 1) Modules
 ###### 2) Comments
@@ -104,15 +108,40 @@ declare function hello(): void;
 ###### 4) Variables
 ###### 5) Statements and Expressions
 
-###### Compiler flags :  --declaration, --out, --watch, --help, --removeComments, --target, --module.
+#### Compiler flags
+###### --declaration, --out, --watch, --help, --removeComments, --target, --module.
 
-###### Identifiers(valid) : $name, _name, rishi67, rishi_1, Rishi_1 (TypeScript is case sensitive).
+#### Valid identifiers
+###### $name, _name, rishi67, rishi_1, Rishi_1 (TypeScript is case sensitive).
 
-###### // is used for single line comment &  /**/ is used for multiline comment.
+#### Comments
+###### //<comment_line>  is used for single line comment &  /* <comment_lines> */  is used for multiline comment.
+eg.
+```javascript
+	//created_on : 14 March 2017
+	//coded_by : Rishikesh Agrawani
+```
 
+or
+
+```javascript
+/*
+	created_on : 14 March 2017
+	coded_by : Rishikesh Agrawani
+*/	
+```
+
+#### What is object?
 ###### According to Grady Brooch, every object must have 3 features, 1) State, 2) Behaviour, 3) Identity
 
+#### What is the importance of methods?
 ###### Methods facilitate communication between objects.
 
+#### How will I run TypeScript?
+1)	Install Node.js from [here](https://nodejs.org/en/download/)
+2)	npm install -g typescript  (Open terminal and run this command)
+3)	Create TypeScript file  (File name's extension should be ts, eg. you created hello.ts)
+4)	tsc hello.js   (Compile TypeScript file using tsc command, it will compile to hello.js on successful compilation)
+5)	node hello.js  (Run js file using node command)
 
 
