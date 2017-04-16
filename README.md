@@ -178,9 +178,19 @@ var name;  //neither type nor value, in this case name's type will be set to any
 
 #### Type Assetion
 The process of changing a variable from one type to another.
+
 eg.
 ```javascript
-
+	var strNum = "1235x";
+	console.log(typeof strNum)
+	var num : number = <number> <any> strNum;
 ```
+
+#### Inferred typing
+TypeScript is strongly typed
+It also encourages dynamic typing of variables
+TypeScript finds the first usgae of variable within the code, determines the type to 
+which it has been initially set and then assume the same type for this variable in the 
+rest of our code
 
 
