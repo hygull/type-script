@@ -60,7 +60,7 @@ Hello world
 [for sublime text 3](https://packagecontrol.io/packages/TypeScript)
 
 ###### Designer 
-Anders Hejlsberg
+Anders Hejlsberg [know more...](https://en.wikipedia.org/wiki/Anders_Hejlsberg)
 
 ###### Features
 1. Statically typed, 
@@ -163,7 +163,7 @@ It is the super type of all the types in TypeScript
 They are not same.
 
 #### Variable
-A named space in the memory that stores values.
+A named space in the memory that stores value.
 
 #### Declaration of variables in TypeScript (4 ways)
 ```javascript
@@ -176,7 +176,11 @@ var name = "Rishikesh"; 	//only value, in this case name's type will be set to a
 var name;  //neither type nor value, in this case name's type will be set to any and value willl be set to undefined
 ```
 
+#### Type Assetion
+The process of changing a variable from one type to another.
+eg.
+```javascript
 
-
+```
 
 
