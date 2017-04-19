@@ -1,7 +1,7 @@
 /*
     {
         "created_at" : "17 April 2017",
-        "aim_of_script" : "Using for loops in Python",
+        "aim_of_script" : "Using for loops in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
