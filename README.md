@@ -195,4 +195,100 @@ TypeScript finds the first usgae of variable within the code, determines the typ
 which it has been initially set and then assume the same type for this variable in the 
 rest of our code
 
+#### Loops in TypeScript
+1)	for loop
+```javascript
+/*
+    {
+        "created_at" : "17 April 2017",
+        "aim_of_script" : "Using for loops in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var arr:number[] = [ 12, 34, 56, 67, 89, 98.07, 67.67 ]
+
+var sum = 0
+
+for(var i=0; i< arr.length;i++){
+	sum += arr[i]
+}
+
+console.log("Sum of all elements of ", arr, " is ",sum)
+```
+
+2)	forEach loop
+```javascript
+/*
+    {
+        "created_at" : "19 April 2017",
+        "aim_of_script" : "Using forEach loop in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var arr:number[] = [1,2,3,4,5]
+
+arr.forEach(
+	function(item){
+		console.log(item)
+	}
+)
+```
+
+3)	for/in loop
+```javascript
+/*
+    {
+        "created_at" : "19 April 2017",
+        "aim_of_script" : "Using for/in in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var arr:number[] = [ 12, 34, 56, 67, 89, 98.07, 67.67 ]
+
+
+var index
+for(index in arr){
+	console.log(arr[index])
+}
+```
+
+4)	while loop
+```javascript
+/*
+    {
+        "created_at" : "19 April 2017",
+        "aim_of_script" : "Using while loop in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var arr:number[] = [67, 57, 83, 31, 97, 53]
+
+var i:number = 0
+
+while( i < arr.length )
+{
+	console.log( arr[i] )
+	i += 1
+} 
+```
+
+5)	do-while loop
+```javascript
+/*
+    {
+        "created_at" : "19 April 2017",
+        "aim_of_script" : "Using do-while loop in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var arr:number[] = [67, 57, 83, 31, 97, 53]
+
+var i:number = 0
+
+do
+{
+	console.log( arr[i] )
+	i += 1
+}while( i < arr.length ) 
+```
 
