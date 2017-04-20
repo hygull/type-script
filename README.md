@@ -246,7 +246,7 @@ arr.forEach(
 */
 ```
 
-3)for/in loop
+3) for/in loop
 ```javascript
 /*
     {
@@ -323,7 +323,7 @@ do
 ```
  
 <hr>
-<h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-16.png'>Todo List</h1>
+<h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-32.png'>Todo List</h1>
 <ol type="1">
 <li style='color:green'>Call by reference & call by value</li>
 <li style='color:green'>var & let keywords</li>
