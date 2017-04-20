@@ -197,7 +197,7 @@ rest of our code
 
 #### Loops in TypeScript
 
-___**1)	for loop**___
+**1)	for loop**
 ```javascript
 /*
     {
@@ -220,7 +220,7 @@ Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
 */
 ```
 
-___**2)	forEach loop**___
+**2)	forEach loop**
 ```javascript
 /*
     {
@@ -246,7 +246,7 @@ arr.forEach(
 ```
 
 
-___**3)	for/in loop**___
+**3)	for/in loop**
 ```javascript
 /*
     {
@@ -274,7 +274,7 @@ for(index in arr){
 ```
 
 
-___**4)	while loop**___
+**4)	while loop**
 ```javascript
 /*
     {
@@ -303,7 +303,7 @@ while( i < arr.length )
 ```
 
 
-___**5)	do-while loop**___
+**5)	do-while loop**
 ```javascript
 /*
     {
@@ -320,6 +320,9 @@ do
 {
 	console.log( arr[i] )
 	i += 1
-}while( i < arr.length ) 
+}while( i < arr.length )   //Semicolon is optional at end
 ```
 
+#### Todo List
+1)  Call by reference & call by value
+2)  var & let keywords
