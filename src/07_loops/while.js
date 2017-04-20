@@ -11,3 +11,11 @@ while (i < arr.length) {
     console.log(arr[i]);
     i += 1;
 }
+/*
+67
+57
+83
+31
+97
+53
+*/ 

@@ -15,3 +15,6 @@ for(var i=0; i< arr.length;i++){
 
 console.log("Sum of all elements of ", arr, " is ",sum)
 
+/*
+Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
+*/

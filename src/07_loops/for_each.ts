@@ -12,3 +12,10 @@ arr.forEach(
 		console.log(item)
 	}
 )
+/*
+1
+2
+3
+4
+5
+*/

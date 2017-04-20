@@ -10,3 +10,12 @@ var index;
 for (index in arr) {
     console.log(arr[index]);
 }
+/*
+12
+34
+56
+67
+89
+98.07
+67.67
+*/ 

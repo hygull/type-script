@@ -14,3 +14,11 @@ do
 	console.log( arr[i] )
 	i += 1
 }while( i < arr.length ) 
+/*
+67
+57
+83
+31
+97
+53
+*/

@@ -196,7 +196,8 @@ which it has been initially set and then assume the same type for this variable 
 rest of our code
 
 #### Loops in TypeScript
-1)	for loop
+
+___**1)	for loop**___
 ```javascript
 /*
     {
@@ -214,9 +215,12 @@ for(var i=0; i< arr.length;i++){
 }
 
 console.log("Sum of all elements of ", arr, " is ",sum)
+/*
+Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
+*/
 ```
 
-2)	forEach loop
+___**2)	forEach loop**___
 ```javascript
 /*
     {
@@ -232,9 +236,17 @@ arr.forEach(
 		console.log(item)
 	}
 )
+/*
+1
+2
+3
+4
+5
+*/
 ```
 
-3)	for/in loop
+
+___**3)	for/in loop**___
 ```javascript
 /*
     {
@@ -250,9 +262,19 @@ var index
 for(index in arr){
 	console.log(arr[index])
 }
+/*
+12
+34
+56
+67
+89
+98.07
+67.67
+*/
 ```
 
-4)	while loop
+
+___**4)	while loop**___
 ```javascript
 /*
     {
@@ -269,10 +291,19 @@ while( i < arr.length )
 {
 	console.log( arr[i] )
 	i += 1
-} 
+}
+/* 
+67
+57
+83
+31
+97
+53
+*/
 ```
 
-5)	do-while loop
+
+___**5)	do-while loop**___
 ```javascript
 /*
     {
