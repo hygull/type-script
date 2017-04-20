@@ -1,6 +1,6 @@
 /*
     {
-        "created_at" : "19 April 2017",
+        "created_at" : "20 April 2017",
         "aim_of_script" : "Using while loop in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }

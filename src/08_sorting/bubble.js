@@ -1,6 +1,6 @@
 /*
     {
-        "created_at" : "19 April 2017",
+        "created_at" : "20 April 2017",
         "aim_of_script" : "To implement bubble sort",
         "coded_by" : "Rishikesh Agrawani",
     }
@@ -26,3 +26,7 @@ var arr = [7, 6, -1, 10, 5, 8, -4, 11, 2, 13, -3, 9];
 console.log("Before sorting : ", arr);
 bubbleSort(arr); //Pass by reference (Arrays are objects)
 console.log("After sorting  : ", arr);
+/*
+Before sorting :  [ 7, 6, -1, 10, 5, 8, -4, 11, 2, 13, -3, 9 ]
+After sorting  :  [ -4, -3, -1, 2, 5, 6, 7, 8, 9, 10, 11, 13 ]
+*/

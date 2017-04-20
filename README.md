@@ -12,14 +12,14 @@ It is a source-to-source compiler
 It is known as transcompiler or transpiler
 
 ###### Environment Setup (For Windows and MAC OS X)
-1.	Text editor - based on the OS (Sublime text, notepad, Notepad++, vim, vi Emacs etc.)
-2.	Node.js - Download installer from [here](https://nodejs.org/en/download/)
+1.  Text editor - based on the OS (Sublime text, notepad, Notepad++, vim, vi Emacs etc.)
+2.  Node.js - Download installer from [here](https://nodejs.org/en/download/)
 
-	(a) Open terminal and execute	__node --version__ or __node -v__
+    (a) Open terminal and execute   __node --version__ or __node -v__
 
-	(b) Then execute __npm install -g typescript__
+    (b) Then execute __npm install -g typescript__
 
-3.	Installation of IDEs (Optional)
+3.  Installation of IDEs (Optional)
 
 ```
 admins-MacBook-Pro-3:TypeScript admin$ node --version
@@ -50,7 +50,7 @@ hello();
 admins-MacBook-Pro-3:src admin$ tsc hello.ts 
 
 admins-MacBook-Pro-3:src admin$ ls
-hello.js	hello.ts
+hello.js    hello.ts
 
 admins-MacBook-Pro-3:src admin$ node hello.js
 Hello world
@@ -74,21 +74,21 @@ ECMASCRIPT5 + ECMASCRIPT6 + Additional features
 Supports Inheritance & Interface
 
 ###### Components
-1.	Language
-2.	TypeScript Compiler
-3.	Language Service
+1.  Language
+2.  TypeScript Compiler
+3.  Language Service
 
 ###### Declaration File
 
 When a TypeScript script gets compiled, there is an option to generate a declaration 
-file (with the extension .d.ts) that functions as an interface to the components in the
+file (with the extension d.ts) that functions as an interface to the components in the
 compiled JavaScript. 
  
 ```
 admins-MacBook-Pro-3:src admin$ tsc -d hello.ts
 
 admins-MacBook-Pro-3:src admin$ ls
-hello.d.ts	hello.js	hello.ts
+hello.d.ts  hello.js    hello.ts
 
 admins-MacBook-Pro-3:src admin$ cat hello.d.ts 
 declare function hello(): void;
@@ -117,19 +117,21 @@ declare function hello(): void;
 #### Comments
 ###### // is used for single line comment 
 ###### /**/  is used for multiline comment
+
+
 eg.
 ```javascript
-	//created_on : 14 March 2017
-	//coded_by : Rishikesh Agrawani
+    //created_on : 14 March 2017
+    //coded_by : Rishikesh Agrawani
 ```
 
 or
 
 ```javascript
 /*
-	created_on : 14 March 2017
-	coded_by : Rishikesh Agrawani
-*/	
+    created_on : 14 March 2017
+    coded_by : Rishikesh Agrawani
+*/  
 ```
 
 #### What is object?
@@ -139,11 +141,11 @@ or
 ###### Methods facilitate communication between objects.
 
 #### How will I run TypeScript?
-1)	Install Node.js from [here](https://nodejs.org/en/download/)
-2)	npm install -g typescript  (Open terminal and run this command)
-3)	Create TypeScript file  (File name's extension should be ts, eg. you created hello.ts)
-4)	tsc hello.ts   (Compile TypeScript file using tsc command, it will compile to hello.js on successful compilation)
-5)	node hello.js  (Run js file using node command)
+1)  Install Node.js from [here](https://nodejs.org/en/download/)
+2)  npm install -g typescript  (Open terminal and run this command)
+3)  Create TypeScript file  (File name's extension should be ts, eg. you created hello.ts)
+4)  tsc hello.ts   (Compile TypeScript file using tsc command, it will compile to hello.js on successful compilation)
+5)  node hello.js  (Run js file using node command)
 
 #### Difference between let & var keywords
 Visit [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/let) to read about the difference. It is nice.
@@ -152,12 +154,12 @@ Visit [here](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Stat
 It is the super type of all the types in TypeScript
 
 #### All built-in types in TypeScript (There is Integer type in TypeScript and JavaScript)
-1)	Number	:	Double precision 64 bit floating point values(used to represent integers and fractions) 	
-2)	String	:	Sequence of unicode characters
-3)	Boolean	:	true/false
-4)	Void 	:	Used as function's return type
-5)	Null	:	Used to represent an intentional absence of object's value
-6)	Undefined : It denotes a value given to all uninitialized variables
+1)  Number  :   Double precision 64 bit floating point values(used to represent integers and fractions)     
+2)  String  :   Sequence of unicode characters
+3)  Boolean :   true/false
+4)  Void    :   Used as function's return type
+5)  Null    :   Used to represent an intentional absence of object's value
+6)  Undefined : It denotes a value given to all uninitialized variables
 
 #### Are null and undefined same?
 They are not same.
@@ -169,9 +171,9 @@ A named space in the memory that stores value.
 ```javascript
 var name : string = "Rishikesh";   //type & value in 1 statement, here string is type-annotaion
 
-var name : string; 	//only type, in this case name will be set to undefined
+var name : string;  //only type, in this case name will be set to undefined
 
-var name = "Rishikesh"; 	//only value, in this case name's type will be set to any
+var name = "Rishikesh";     //only value, in this case name's type will be set to any
 
 var name;  //neither type nor value, in this case name's type will be set to any and value willl be set to undefined
 ```
@@ -181,9 +183,9 @@ The process of changing a variable from one type to another.
 
 eg.
 ```javascript
-	var strNum = "1235x";
-	console.log(typeof strNum)
-	var num : number = <number> <any> strNum;
+    var strNum = "1235x";
+    console.log(typeof strNum)
+    var num : number = <number> <any> strNum;
 ```
 
 #### Inferred typing
@@ -196,8 +198,7 @@ which it has been initially set and then assume the same type for this variable 
 rest of our code
 
 #### Loops in TypeScript
-
-**1)	for loop**
+<u style='color:blue;font-weight:bold;font-family:tahoma'>for loop</u>
 ```javascript
 /*
     {
@@ -211,7 +212,7 @@ var arr:number[] = [ 12, 34, 56, 67, 89, 98.07, 67.67 ]
 var sum = 0
 
 for(var i=0; i< arr.length;i++){
-	sum += arr[i]
+    sum += arr[i]
 }
 
 console.log("Sum of all elements of ", arr, " is ",sum)
@@ -220,11 +221,11 @@ Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
 */
 ```
 
-**2)	forEach loop**
+<u style='color:blue;font-weight:bold;font-family:tahoma'>forEach loop</u>
 ```javascript
 /*
     {
-        "created_at" : "19 April 2017",
+        "created_at" : "20 April 2017",
         "aim_of_script" : "Using forEach loop in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
@@ -232,9 +233,9 @@ Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
 var arr:number[] = [1,2,3,4,5]
 
 arr.forEach(
-	function(item){
-		console.log(item)
-	}
+    function(item){
+        console.log(item)
+    }
 )
 /*
 1
@@ -246,11 +247,11 @@ arr.forEach(
 ```
 
 
-**3)	for/in loop**
+<u style='color:blue;font-weight:bold;font-family:tahoma'>for/in loop</u>
 ```javascript
 /*
     {
-        "created_at" : "19 April 2017",
+        "created_at" : "20 April 2017",
         "aim_of_script" : "Using for/in in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
@@ -260,7 +261,7 @@ var arr:number[] = [ 12, 34, 56, 67, 89, 98.07, 67.67 ]
 
 var index
 for(index in arr){
-	console.log(arr[index])
+    console.log(arr[index])
 }
 /*
 12
@@ -274,11 +275,11 @@ for(index in arr){
 ```
 
 
-**4)	while loop**
+<u style='color:blue;font-weight:bold;font-family:tahoma'>while loop</u>
 ```javascript
 /*
     {
-        "created_at" : "19 April 2017",
+        "created_at" : "20 April 2017",
         "aim_of_script" : "Using while loop in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
@@ -289,8 +290,8 @@ var i:number = 0
 
 while( i < arr.length )
 {
-	console.log( arr[i] )
-	i += 1
+    console.log( arr[i] )
+    i += 1
 }
 /* 
 67
@@ -303,11 +304,11 @@ while( i < arr.length )
 ```
 
 
-**5)	do-while loop**
+<u style='color:blue;font-weight:bold;font-family:tahoma'>do-while loop</u>
 ```javascript
 /*
     {
-        "created_at" : "19 April 2017",
+        "created_at" : "20 April 2017",
         "aim_of_script" : "Using do-while loop in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
@@ -318,11 +319,14 @@ var i:number = 0
 
 do
 {
-	console.log( arr[i] )
-	i += 1
+    console.log( arr[i] )
+    i += 1
 }while( i < arr.length )   //Semicolon is optional at end
 ```
-
-#### Todo List
-1)  Call by reference & call by value
-2)  var & let keywords
+ 
+<hr>
+<h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-48.png'>Todo List</h1>
+<ol type="1">
+<li style='color:green'>Call by reference & call by value</li>
+<li style='color:green'>var & let keywords</li>
+</ol>
