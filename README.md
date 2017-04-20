@@ -198,7 +198,7 @@ which it has been initially set and then assume the same type for this variable 
 rest of our code
 
 #### Loops in TypeScript
-<u style='color:blue;font-weight:bold;font-family:tahoma'>for loop</u>
+<h5 style='color:blue;font-weight:bold;font-family:tahoma'>for loop</h5>
 ```javascript
 /*
     {
@@ -221,7 +221,7 @@ Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
 */
 ```
 
-<u style='color:blue;font-weight:bold;font-family:tahoma'>forEach loop</u>
+<h5 style='color:blue;font-weight:bold;font-family:tahoma'>forEach loop</h5>
 ```javascript
 /*
     {
@@ -247,7 +247,7 @@ arr.forEach(
 ```
 
 
-<u style='color:blue;font-weight:bold;font-family:tahoma'>for/in loop</u>
+<h5 style='color:blue;font-weight:bold;font-family:tahoma'>for/in loop</h5>
 ```javascript
 /*
     {
@@ -275,7 +275,7 @@ for(index in arr){
 ```
 
 
-<u style='color:blue;font-weight:bold;font-family:tahoma'>while loop</u>
+<h5 style='color:blue;font-weight:bold;font-family:tahoma'>while loop</h5>
 ```javascript
 /*
     {
