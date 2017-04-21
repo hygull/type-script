@@ -197,7 +197,7 @@ TypeScript finds the first usgae of variable within the code, determines the typ
 which it has been initially set and then assume the same type for this variable in the 
 rest of our code
 
-### Loops in TypeScript
+### 4 loops and forEach() method(to iterate over arrays) in TypeScript
 1)  for loop
 ```javascript
 /*
@@ -221,32 +221,7 @@ Sum of all elements of  [ 12, 34, 56, 67, 89, 98.07, 67.67 ]  is  423.74
 */
 ```
 
-2)  forEach loop
-```javascript
-/*
-    {
-        "created_at" : "20 April 2017",
-        "aim_of_script" : "Using forEach loop in TypeScript",
-        "coded_by" : "Rishikesh Agrawani",
-    }
-*/
-var arr:number[] = [1,2,3,4,5]
-
-arr.forEach(
-    function(item){
-        console.log(item)
-    }
-)
-/*
-1
-2
-3
-4
-5
-*/
-```
-
-3) for/in loop
+2) for/in loop
 ```javascript
 /*
     {
@@ -273,7 +248,7 @@ for(index in arr){
 */
 ```
 
-4) while loop
+3) while loop
 ```javascript
 /*
     {
@@ -302,7 +277,7 @@ while( i < arr.length )
 ```
 
 
-5) do-while loop
+4) do-while loop
 ```javascript
 /*
     {
@@ -321,6 +296,32 @@ do
     i += 1
 }while( i < arr.length )   //Semicolon is optional at end
 ```
+
+5)  forEach() method 
+```javascript
+/*
+    {
+        "created_at" : "20 April 2017",
+        "aim_of_script" : "Using forEach loop in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var arr:number[] = [1,2,3,4,5]
+
+arr.forEach(
+    function(item){
+        console.log(item)
+    }
+)
+/*
+1
+2
+3
+4
+5
+*/
+```
+
 
 ### Array in  TypeScript
 ```javascript
