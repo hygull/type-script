@@ -328,3 +328,59 @@ do
 <li style='color:green'>Call by reference & call by value</li>
 <li style='color:green'>var & let keywords</li>
 </ol>
+
+### Array in  TypeScript
+```javascript
+//Declaration example
+var arr:number[];
+
+//Declaration & initialization example
+var arr2:number[] = [ 1, 5, 7, -3, 0, 34 ]
+
+var arr3:number[];  //Declaration
+arr3 = [ 5, 8, 11 ]    //Initialization
+```
+
+##### Features (Like C/C++)
+1)  Arrays are static.
+2)  Elements are stored in a sequential/contiguous memory blocks.
+3)  Array elements can be updated but can not be deleted.
+4)  Elements are accessed using subscript/index.
+
+```
+/*
+    {
+        "created_at" : "21 April 2017",
+        "aim_of_script" : "Using array in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+//Creating array in TypeScript
+var arr : number[] = [ 1, 67, 2, 54, 3, 89, 71, -56, 0, -1 ]
+
+//Iterating over an array arr
+for(var i=0; i<arr.length; i++){
+    console.log(arr[i])
+}
+
+//Creating another array of strings
+var cities:string[];
+cities = [ "Raipur", "Dhamtari", "Bangalore", "Jagdalpur" ];
+console.log( cities );
+
+
+/*
+1
+67
+2
+54
+3
+89
+71
+-56
+0
+-1
+[ 'Raipur', 'Dhamtari', 'Bangalore', 'Jagdalpur' ]
+*/
+```

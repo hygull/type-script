@@ -14,3 +14,8 @@ function splitContents(s:string)
 var s = "Rishikesh"
 console.log("Splitting  " + s)
 console.log("An array containing all characters is ",splitContents(s))
+
+/*
+Splitting  Rishikesh
+An array containing all characters is  [ 'R', 'i', 's', 'h', 'i', 'k', 'e', 's', 'h' ]
+*/
