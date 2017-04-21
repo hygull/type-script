@@ -402,6 +402,43 @@ I like the following programming languages
 */
 ```
 
+##### Creating array using Array() constructor( 2nd way )
+```javascript
+var arr:number[] = new Array(7);
+
+for (var i=0; i<arr.length; i++){
+    arr[i] = i+1
+    console.log(arr[i])
+}
+
+console.log(arr)
+
+/*
+1
+2
+3
+4
+5
+6
+7
+[ 1, 2, 3, 4, 5, 6, 7 ]
+*/
+```
+##### Array destructing
+It refers to breaking up the structure of an entity. TypeScript supports destructing
+when used in the context of an array.
+```javascript
+var arr:number[] = [ 12, 45, 67, 98, 34, 65 ]
+
+var [ a, b, c, d, e, f ] = arr  //Array Destruction
+
+console.log(a, b, c, d, e, f)
+
+/*
+12 45 67 98 34 65
+*/
+```
+
 <hr>
 <h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-32.png'>Todo List</h1>
 <ol type="1">
