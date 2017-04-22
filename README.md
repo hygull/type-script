@@ -471,6 +471,30 @@ I am Rishikesh Agrawani. I am 24 years old.
 */
 ```
 
+##### Optional argument (in the following example, height is optional argument)
+```javascript
+//Here height is optional argument and length & width are required arguments
+function getAreaOrVoulme(length:number, width:number, height?:number)
+{
+    if( height == undefined)
+    {
+        return (length*width) //return base area of room    
+    }
+    else
+    {
+        return (length*width*height)    //return volume of the room
+    }
+}
+
+console.log("Base area of room with height 10m and width 12m will be ", getAreaOrVoulme(10,12), "sq. metre.")
+
+console.log("Volume of room with height 23m, width 10m & height 20 will be ", getAreaOrVoulme(23, 10, 20), "cube metre.")
+
+/*
+Base area of room with height 10m and width 12m will be  120 sq. metre.
+Volume of room with height 23m, width 10m & height 20 will be  4600 cube metre.
+*/
+```
 <hr>
 <h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-32.png'>Todo List</h1>
 <ol type="1">
