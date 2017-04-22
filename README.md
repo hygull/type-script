@@ -439,6 +439,38 @@ console.log(a, b, c, d, e, f)
 */
 ```
 
+### Functions in TypeScript
+Function is defined as a self contained block that is esigned to perform a coherent task of some kind.
+It is a set of statements that performs a specific task.
+```javascript
+/*
+    {
+        "created_at" : "22 April 2017",
+        "aim_of_script" : "Using functions in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function printMessage()
+{
+    console.log("Hello programmers.")
+}
+
+function myDetails(name:string, age:number)
+{
+    console.log("I am "+name+". I am "+age+" years old.")
+}
+
+printMessage();
+
+myDetails("Rishikesh Agrawani", 24);
+
+/*
+Hello programmers.
+I am Rishikesh Agrawani. I am 24 years old.
+*/
+```
+
 <hr>
 <h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-32.png'>Todo List</h1>
 <ol type="1">
