@@ -471,7 +471,11 @@ I am Rishikesh Agrawani. I am 24 years old.
 */
 ```
 
-##### Optional argument (in the following example, height is optional argument)
+##### Optional argument 
+Optional parameters are parameters that is not compulsorily passed to function while calling it.
+
+It we will not supply any value for optional argument, nothing will happen.
+
 ```javascript
 //Here height is optional argument and length & width are required arguments
 function getAreaOrVoulme(length:number, width:number, height?:number)
@@ -493,6 +497,99 @@ console.log("Volume of room with height 23m, width 10m & height 20 will be ", ge
 /*
 Base area of room with height 10m and width 12m will be  120 sq. metre.
 Volume of room with height 23m, width 10m & height 20 will be  4600 cube metre.
+*/
+```
+
+##### Rest parameters
+Rest parameters are similar to the variable number of arguments in Java. 
+
+Rest parameters don't restrict number of parameters that we can pass to function.
+
+Rest parameter name should be preceded with 3 dots.
+
+All rest parameter should be of same type.
+
+```javascript
+function sum(a:number, b:number, ...rest_parameters:number[])
+{
+    var total = 0
+
+    for(var i=0;i<rest_parameters.length;i++)
+    {
+        total += rest_parameters[i]
+    }
+
+    return (total + a + b)
+}
+
+console.log("Sum of 10 & 20 is",sum(10,20))
+
+console.log("Sum of 10, 20, 45, 34 is ", sum(10,20,45, 34)) //2 rest parameters
+
+console.log("Sum of 23, 45, 56, 78, 23 89 is ", sum(23, 45, 56, 78, 23, 89)) //4 rest parameters
+
+console.log("Sum of 23.98, 89.34, 67.67 is ", sum(23.98, 89.34, 67.67)) // 1 rest parameter
+/*
+Sum of 10 & 20 is 30
+Sum of 10, 20, 45, 34 is  109
+Sum of 23, 45, 56, 78, 23 89 is  314
+Sum of 23.98, 89.34, 67.67 is  180.99
+*/
+```
+### Rest parameters
+Whenever we are going to pass some common values in different functions calls by changing
+the values of few parameters then we should use those common valued parameters as default 
+parameters.
+
+```javascript
+/*
+    {
+        "created_at" : "23 April 2017",
+        "aim_of_script" : "Using default parameters in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function showDetails(name="Rishikesh Agrawani", age=24, city="Kondagaon", state="Chhattisgarh", country="India")
+{
+    console.log("My name is "+name)
+
+    console.log("I am "+age+" years old.")
+
+    console.log("I lives in "+city+".")
+
+    console.log("Which is in "+state+ " state of country "+country+".\n")
+}
+
+showDetails()
+
+showDetails("Suryapratap Surya")
+
+showDetails("Hemkesh", 22)
+
+showDetails("Virendra Sehwag", 38, "Najafgarh", "Delhi")
+
+/*
+My name is Rishikesh Agrawani
+I am 24 years old.
+I lives in Kondagaon.
+Which is in Chhattisgarh state of country India.
+
+My name is Suryapratap Surya
+I am 24 years old.
+I lives in Kondagaon.
+Which is in Chhattisgarh state of country India.
+
+My name is Hemkesh
+I am 22 years old.
+I lives in Kondagaon.
+Which is in Chhattisgarh state of country India.
+
+My name is Virendra Sehwag
+I am 38 years old.
+I lives in Najafgarh.
+Which is in Delhi state of country India.
+
 */
 ```
 <hr>
