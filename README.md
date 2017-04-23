@@ -594,10 +594,14 @@ I lives in Najafgarh.
 Which is in Delhi state of country India.
 
 */
-```javascript
+```
+
 ##### Anonymous function
 A function that is not bound to a name is known as an anonymous function.
-```
+
+Anonymous functions are dynamically declared at runtime.
+
+```javascript
 /*
     {
         "created_at" : "23 April 2017",
@@ -623,7 +627,35 @@ Hello programmers.
 57
 */
 ```
+##### function expression
+An anonymous function can be assigned to a variable, such an expression is known as
+function expression.
+```javascript
+/*
+    {
+        "created_at" : "23 April 2017",
+        "aim_of_script" : "Using function expression in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
 
+var fact = function(n:number){ //function expression
+    var f = 1
+    for(var i=1; i<=n;i++){
+        f *= i
+    }
+    return f;
+}
+
+console.log("Factorial of 5 is ",fact(5))
+
+console.log("Factorial of 8 is ",fact(8))
+
+/*
+Factorial of 5 is  120
+Factorial of 8 is  40320
+*/
+```
 <hr>
 <h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-32.png'>Todo List</h1>
 <ol type="1">
