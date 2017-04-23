@@ -474,10 +474,12 @@ I am Rishikesh Agrawani. I am 24 years old.
 ##### Optional argument 
 Optional parameters are parameters that is not compulsorily passed to function while calling it.
 
-It we will not supply any value for optional argument, nothing will happen.
+It need not to be passed to a function compulsorily.
+
+If we will not supply any value for optional argument, nothing will happen.
 
 ```javascript
-//Here height is optional argument and length & width are required arguments
+//Here height is optional argument and length, width are required arguments
 function getAreaOrVoulme(length:number, width:number, height?:number)
 {
     if( height == undefined)
@@ -536,7 +538,8 @@ Sum of 23, 45, 56, 78, 23 89 is  314
 Sum of 23.98, 89.34, 67.67 is  180.99
 */
 ```
-### Rest parameters
+
+##### Default parameters
 Whenever we are going to pass some common values in different functions calls by changing
 the values of few parameters then we should use those common valued parameters as default 
 parameters.
@@ -591,7 +594,36 @@ I lives in Najafgarh.
 Which is in Delhi state of country India.
 
 */
+```javascript
+##### Anonymous function
+A function that is not bound to a name is known as an anonymous function.
 ```
+/*
+    {
+        "created_at" : "23 April 2017",
+        "aim_of_script" : "Anonymous function in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+var printMessage = function(){  //Anonymous function with no arguments
+    console.log("Hello programmers.");
+}
+
+var add = function( num1:number, num2:number){  //Anonymous function with 2 arguments of type number
+    return num1 + num2; //Return sum of both numbers
+}
+
+printMessage();
+
+console.log( add(12, 45) );
+
+/*
+Hello programmers.
+57
+*/
+```
+
 <hr>
 <h1><img src='https://cdn2.iconfinder.com/data/icons/illustricon-tech-viii/512/task_refresh-32.png'>Todo List</h1>
 <ol type="1">
