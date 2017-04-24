@@ -762,19 +762,12 @@ In recursion a function calls itself from within its body.
 It is very important concept in programming as it is very useful in searching, traversing
 in Trees, Graphs etc. There are many other applications too.
 
-<<<<<<< HEAD
 ###### Iterative implementation
-=======
->>>>>>> dc18381896d22c626ea31fc41f65f9934d807da8
 ```javascript
 /*
     {
         "created_at" : "24 April 2017",
-<<<<<<< HEAD
         "aim_of_script" : "Reversing digits of any +ve integer in TypeScript(using Iteration)",
-=======
-        "aim_of_script" : "Reversing digits of any +ve integer in TypeScript(using Recursion)",
->>>>>>> dc18381896d22c626ea31fc41f65f9934d807da8
         "coded_by" : "Rishikesh Agrawani",
     }
 */
@@ -802,7 +795,6 @@ console.log("1984645234 reversed form is ", reverseDigits(1984645234))
 1984645234 reversed form is  4325464891
 */
 ```
-<<<<<<< HEAD
 
 ###### Recursive implementation
 ```javascript
@@ -844,8 +836,6 @@ Type of  4321  is  number
 */
 ```
 
-=======
->>>>>>> dc18381896d22c626ea31fc41f65f9934d807da8
 <hr>
 <h1 style='color:green'>Notes</h1>
 <ol type="1">
