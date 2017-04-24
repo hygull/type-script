@@ -756,6 +756,44 @@ Sum of 1, 5, 7, 34, 56, 67 & 98 is  268
 */
 ```
 
+##### Recursion
+It is the process of defining something in terms of itself.
+In recursion a function calls itself from within its body.
+It is very important concept in programming as it is very useful in searching, traversing
+in Trees, Graphs etc. There are many other applications too.
+
+```javascript
+/*
+    {
+        "created_at" : "24 April 2017",
+        "aim_of_script" : "Reversing digits of any +ve integer in TypeScript(using Recursion)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function reverseDigits(n:number){
+    var reversedNumber = 0;
+
+    for(  ; n!=0 ; n=Math.floor((n/10)) )  // n/10 returns float if numerator is not a factor of denominator
+    {
+        var remainder = n%10
+        reversedNumber = (reversedNumber*10) + remainder
+    }
+    return reversedNumber
+}
+
+console.log("1234 reversed form is ", reverseDigits(1234))
+console.log("64534 reversed form is ", reverseDigits(64534))
+console.log("1912387 reversed form is ", reverseDigits(1912387))
+console.log("1984645234 reversed form is ", reverseDigits(1984645234))
+
+/*
+1234 reversed form is  4321
+64534 reversed form is  43546
+1912387 reversed form is  7832191
+1984645234 reversed form is  4325464891
+*/
+```
 <hr>
 <h1 style='color:green'>Notes</h1>
 <ol type="1">
