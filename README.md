@@ -836,6 +836,64 @@ Type of  4321  is  number
 */
 ```
 
+##### Iteration (Another example)
+```javascript
+/*
+    {
+        "created_at" : "24 April 2017",
+        "aim_of_script" : "Adding digits of any +ve integer in TypeScript (using Iteration)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function getSumOfDigits(n:number){
+    var s = 0
+
+    for( ; n!=0; n=Math.floor(n/10)){
+        s += n%10
+    }
+    return s
+}
+
+console.log( "Sum of digits in integer 129324 is ", getSumOfDigits(129324))
+
+console.log("Sum of digits in integer 23476982 is ", getSumOfDigits(23476982))
+
+/*
+Sum of digits in integer 129324 is  21
+Sum of digits in integer 23476982 is  41
+*/
+```
+
+##### Recursion (Another example)
+```javascript
+/*
+    {
+        "created_at" : "24 April 2017",
+        "aim_of_script" : "Adding digits of any +ve integer in TypeScript (using Recursion)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function getDigitsSum(n:number){
+
+    if(Math.floor(n/10)==0){
+        return Math.floor(n)
+    }
+
+    return  (n%10) + getDigitsSum(Math.floor(n/10))
+}
+
+console.log( "Sum of digits in 348753 is ",getDigitsSum(348753))
+
+console.log("Sum of digits in 645764523 is ",getDigitsSum(645434319))
+
+/*
+Sum of digits in 348753 is  30
+Sum of digits in 645764523 is  39
+*/
+```
+
 <hr>
 <h1 style='color:green'>Notes</h1>
 <ol type="1">
