@@ -1,1 +1,2 @@
-declare function reverseDigits(n: number): number;
+declare function reverseDigits(n: number): any;
+declare var revNum: any;
