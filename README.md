@@ -439,7 +439,7 @@ for (var i = 1; i <= 10; i++) {
     }
 */
 
-//Without break keyword
+//Without continue keyword
 for(var i:number=1; i<=10;i++)
 {
     var s = ""
@@ -470,27 +470,27 @@ for(var i:number=1; i<=10;i++)
 
 /*
 1   2   3   4   5   6   7   8   9   10  
-2   4   6   8   10  12  14  16  18  20  
-3   6   9   12  15  18  21  24  27  30  
-4   8   12  16  20  24  28  32  36  40  
-5   10  15  20  25  30  35  40  45  50  
-6   12  18  24  30  36  42  48  54  60  
-7   14  21  28  35  42  49  56  63  70  
-8   16  24  32  40  48  56  64  72  80  
-9   18  27  36  45  54  63  72  81  90  
-10  20  30  40  50  60  70  80  90  100 
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
+1   2   3   4   5   6   7   8   9   10  
 
 
 2   3   4   5   6   7   8   9   10  
-2   6   8   10  12  14  16  18  20  
-3   6   12  15  18  21  24  27  30  
-4   8   12  20  24  28  32  36  40  
-5   10  15  20  30  35  40  45  50  
-6   12  18  24  30  42  48  54  60  
-7   14  21  28  35  42  56  63  70  
-8   16  24  32  40  48  56  72  80  
-9   18  27  36  45  54  63  72  90  
-10  20  30  40  50  60  70  80  90
+1   3   4   5   6   7   8   9   10  
+1   2   4   5   6   7   8   9   10  
+1   2   3   5   6   7   8   9   10  
+1   2   3   4   6   7   8   9   10  
+1   2   3   4   5   7   8   9   10  
+1   2   3   4   5   6   8   9   10  
+1   2   3   4   5   6   7   9   10  
+1   2   3   4   5   6   7   8   10  
+1   2   3   4   5   6   7   8   9
 */
 ```
 
@@ -1009,6 +1009,50 @@ console.log("Sum of digits in 645764523 is ",getDigitsSum(645434319))
 /*
 Sum of digits in 348753 is  30
 Sum of digits in 645764523 is  39
+*/
+```
+
+##### Checking type of objects
+```javascript
+/*
+    {
+        "created_at" : "25 April 2017",
+        "aim_of_script" : "Checking types of data in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+var a:number = 10
+var f:number = 12.67
+var o = { name : "Rishikesh Agrawani", age:24, langauges:["Python", "Golang", "C", "C++"] }
+var arr:number[] = [ 12, 45, 6, 7 ]
+var t;  //undefined as t has not been assigned any value
+var city:string = "Bangalore"
+var d = new Date()
+
+console.log(typeof a)       //number
+console.log(typeof f)       //number
+console.log(typeof o)       //object
+console.log(typeof arr)     //object
+console.log(typeof t)       //undefined
+console.log(typeof city)    //string
+console.log(typeof d)       //object
+
+console.log(typeof undefined)   //undefined
+console.log(typeof null)    //object
+console.log(typeof NaN) //number
+
+/*
+number
+number
+object
+object
+undefined
+string
+object
+undefined
+object
+number
 */
 ```
 
