@@ -1012,7 +1012,7 @@ Sum of digits in 645764523 is  39
 */
 ```
 
-##### Checking type of objects
+### Checking type of objects
 ```javascript
 /*
     {
@@ -1053,6 +1053,40 @@ object
 undefined
 object
 number
+*/
+```
+
+### Union type
+Union type gives us the ability to combine one or two types.
+
+Union types provide us a powerful way to express a value that can be one of the several types.
+```javascript
+/*
+    {
+        "created_at" : "25 April 2017",
+        "aim_of_script" : "Using Union type in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var a:number|string     //Declaring Union type
+
+a = 12;     //Assigning integer value
+
+console.log(a)  //Printing a's value on screen
+
+console.log(typeof a)   //Checking the type of a
+
+a = "Bangalore"     //Reassigning string value to a
+
+console.log(a)  
+
+console.log(typeof a)   //Checking the type of a
+
+/*
+12
+number
+Bangalore
+string
 */
 ```
 
