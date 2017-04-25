@@ -9,7 +9,7 @@
 //Without break keyword
 for(var i:number=1; i<=10;i++)
 {
-	var s=""
+	var s = ""
 	for(var j:number=1; j<=10; j++)
 	{
 		s += (i*j) + "\t"
@@ -27,7 +27,7 @@ for(var i:number=1 ; i<=10;i++){
 		break	//Go outside of outer for loop
 	}
 	
-	var s=""
+	var s = ""
 	for(var j:number=1; j<=10; j++)
 	{
 		s += (i*j) + "\t"
