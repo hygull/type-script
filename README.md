@@ -197,6 +197,39 @@ TypeScript finds the first usgae of variable within the code, determines the typ
 which it has been initially set and then assume the same type for this variable in the 
 rest of our code
 
+### Switch cases
+Switch case is an important control statement in TypeScript.
+
+It allows us to have the functionality of if else statements.
+```javascript
+/*
+    {
+        "created_at" : "26 April 2017",
+        "aim_of_script" : "Using switch cases in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+var myFavNum:number = 67
+
+switch (myFavNum) {
+    case 1:
+            console.log("(1) My favourite number is ",1)
+            break   //Go out side of switch block
+    case 67:
+            console.log("(2) My favourite number is ",67)           
+            break   
+    case 64:
+            console.log("(3) My favourite number is ",64)
+            break
+    default:
+            console.log("You are not a fan of any number")  //If no cases mathced
+}
+
+/*
+(2) My favourite number is  67
+*/
+```
+
 ### 4 loops and forEach() method(to iterate over arrays) in TypeScript
 1)  for loop
 ```javascript
@@ -1072,13 +1105,13 @@ var a:number|string     //Declaring Union type
 
 a = 12;     //Assigning integer value
 
-console.log(a)  //Printing a's value on screen
+console.log(a)  //Printing a's value on console
 
 console.log(typeof a)   //Checking the type of a
 
 a = "Bangalore"     //Reassigning string value to a
 
-console.log(a)  
+console.log(a)      //Printing a's value on console
 
 console.log(typeof a)   //Checking the type of a
 
