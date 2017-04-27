@@ -12,7 +12,7 @@ class College{
 	likes:number
 	totalStudents:number
 
-	//Here this keyword overcomes ambiguity as local parameters name is same as fields name
+	//Here this keyword overcomes ambiguity as local parameter names is same as field names
 	constructor(name,branches, likes, totalStudents){
 		this.name = name
 		this.branches = branches
