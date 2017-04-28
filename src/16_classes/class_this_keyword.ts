@@ -21,7 +21,7 @@ class College{
 	}
 
 	getCollegeDetails():void{	//function keyword is not required here
-		console.log("Colege name : ",this.name)
+		console.log("College name : ",this.name)
 		console.log("Branches : ",this.branches)
 		console.log("Likes : ", this.likes)
 		console.log("Total numebr of students : ",this.totalStudents)
@@ -41,15 +41,16 @@ function main(){
 	scienceCollege.getCollegeDetails()
 }
 
+//calling starter function
 main();
 
 /*
-Colege name :  NIT Raipur
+College name :  NIT Raipur
 Branches :  [ 'CSE', 'IT', 'MECHANICAL' ]
 Likes :  200000
 Total numebr of students :  4000
 
-Colege name :  Science College
+College name :  Science College
 Branches :  [ 'PCM', 'CZG', 'CBZ' ]
 Likes :  700000
 Total numebr of students :  8000

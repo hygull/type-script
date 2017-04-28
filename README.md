@@ -1102,7 +1102,7 @@ Sum of digits in integer 129324 is  21
 Sum of digits in integer 23476982 is  41
 */
 ```
-
+    
 ##### Recursion (Another example)
 ```javascript
 /*
@@ -1210,7 +1210,7 @@ string
 */
 ```
 
-### class
+### Classes 
 Class is a blueprint for creating objects. A class encapsulates data for object.
 TypeScript gets this feature from ES6.
 
@@ -1268,7 +1268,7 @@ Book Pages   :  830
 */
 ```
 
-this keyword is used to avoid the ambiguity in case when the filed names are same as the parameter names of constructor 
+this keyword avoids the ambiguity in case when the field names are same as the parameter names of constructor. 
 ```javascript
 /*
     {
@@ -1328,6 +1328,64 @@ Total numebr of students :  8000
 */
 ```
 
+### Interfaces
+An interface is a syntactical construct that an entity should conform to.
+
+An interface defines the syntax that an entity must adhere to.
+```javascript
+/*
+    {
+        "created_at" : "28 April 2017",
+        "aim_of_script" : "Using interfaces in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+interface TwoDimensional{
+    length:number
+    width:number
+
+    getArea: (a:number, b:number)=>number
+}
+
+//Recatangle
+var rectangle:TwoDimensional = {
+    length:40,
+    width:25,
+
+    getArea: (a:number,b:number) : number => {
+        return a*b
+    }
+
+}
+
+//Square
+var square:TwoDimensional = {
+    length:40,
+    width:40,
+
+    getArea: (a:number,b:number) : number => {
+        return a*b
+    }
+
+}
+
+var area:number 
+
+area = rectangle.getArea(rectangle.length, rectangle.width)
+console.log("A rectangle with length ", rectangle.length,"metre and width "
+            ,rectangle.width, "metre has area = ",area," sq. metre." )  //40x25 = 1000
+
+area = square.getArea(square.length, square.width)
+console.log("A square with length ", square.length,"metre and width "
+            ,square.width, "metre has area = ",area," sq. metre." ) //40x40 = 1600
+
+/*
+A rectangle with length  40 metre and width  25 metre has area =  1000  sq. metre.
+A square with length  40 metre and width  40 metre has area =  1600  sq. metre.
+*/
+```
+
 <h1 style='color:green'>Notes</h1>
 <ol type="1">
     <li>
@@ -1336,7 +1394,6 @@ Total numebr of students :  8000
     The fundamental difference between the two is that, function declarations are parsed 
     before their execution. On the other hand, function expressions are parsed only when the script encounters it during execution. 
     </li>
-
 </ol>
 
 <h1>Todo List</h1>
