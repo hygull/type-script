@@ -1435,21 +1435,20 @@ Honda city 7000000000 Black
 ```
 
 <h1 style='color:green'>Notes</h1>
-<ol type="1">
-    <li>
+
         Function decalration & function expression are not synonymous.Unlike a function
     expression, function declaration is bound by the function name.
     The fundamental difference between the two is that, function declarations are parsed 
     before their execution. On the other hand, function expressions are parsed only when the script encounters it during execution. 
     </li>
-    <li>
-    ```typescript
-    var nstr = (<HTMLInputElement>document.getElementById("inp1")).value 
-    ```
-    Visit [here](http://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement)
 
-    </li>
-</ol>
+```typescript
+    var nstr = (<HTMLInputElement>document.getElementById("inp1")).value 
+```
+Visit [here](http://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement)
+
+
+
 
 <h1>Todo List</h1>
 <ol type="1">
