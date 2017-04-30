@@ -1437,7 +1437,8 @@ Honda city 7000000000 Black
 ### Objects
 An object is defined as an instance which contains set of key-value pairs.
 
-The values can be scalar values, functions or even an array of other objects.
+The values can be scalar values, functions, structures like tuples, an array of other objects etc.
+
 ```typescript
 /*
     {
@@ -1512,17 +1513,183 @@ India
 Toyota
 */
 ```
+
+### Type Template
+JavaScript code (In TypeScript the same code will not work)
+```javascript
+//Creating object named car
+var car = {
+    name: "Lamborgini",
+    price: "36000000000",
+    color: "Red",
+    country: "India",
+    company: "Toyota",
+};
+
+//Printing 1st 10 even numbers
+car.printEvens = function () {
+    for (var num = 2; num < 21; num += 2) {
+        console.log(num);
+    }
+};
+//Printing 1st 10  odd numbers
+car.printOdds = function () {
+    for (var num = 1; num < 20; num += 2) {
+        console.log(num);
+    }
+};
+//Printing keys of an object
+car.printKeys = function (carObj) {
+    for (var key in carObj) {
+        console.log(key);
+    }
+};
+```
+
+TypeScript code (Type templates)
+```typescript
+//Creating object named car
+var car = {
+    name : "Lamborgini",
+    price : "36000000000",
+    color : "Red",
+    country : "India",
+    company : "Toyota",
+
+    //Type templates
+    printEvens : function() {}, //In JavaScript, this line is not required 
+    printOdds : function() {},  //...
+    printKeys : function(carObj) {},  //...
+}
+
+//Printing 1st 10 even numbers
+car.printEvens = function(){
+    for(var num:number=2; num<21; num+=2){
+        console.log(num)
+    }
+}
+
+//Printing 1st 10  odd numbers
+car.printOdds = function(){
+    for(var num:number=1; num<20; num+=2){
+        console.log(num)
+    }
+}
+
+//Printing keys of an object
+car.printKeys = function(carObj){
+    for(var key in carObj){
+        console.log(key)
+    }
+}
+```
+
+Full example with output(in TypeScript)
+```
+/*
+    {
+        "created_at" : "30 April 2017",
+        "aim_of_script" : "Type Template, adding members to object(JavaScript allows but TypeScript doesn't)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+//Creating object named car
+var car = {
+    name : "Lamborgini",
+    price : "36000000000",
+    color : "Red",
+    country : "India",
+    company : "Toyota",
+
+    //Type templates
+    printEvens : function() {}, //In JavaScript, this line is not required 
+    printOdds : function() {},  //...
+    printKeys : function(carObj) {},  //...
+}
+
+//Printing 1st 10 even numbers
+car.printEvens = function(){
+    for(var num:number=2; num<21; num+=2){
+        console.log(num)
+    }
+}
+
+//Printing 1st 10  odd numbers
+car.printOdds = function(){
+    for(var num:number=1; num<20; num+=2){
+        console.log(num)
+    }
+}
+
+//Printing keys of an object
+car.printKeys = function(carObj){
+    for(var key in carObj){
+        console.log(key)
+    }
+}
+
+//Starter function
+function main(){
+    car.printEvens();
+
+    console.log()   //Newline
+
+    car.printOdds();
+
+    console.log()   //Newline
+
+    car.printKeys(car)
+}
+
+//Calling starter function to start the execution of this script
+main()
+
+/*
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+
+name
+price
+color
+country
+company
+printEvens
+printOdds
+printKeys
+*/
+```
+
 <h1 style='color:green'>Notes</h1>
 
-        Function decalration & function expression are not synonymous.Unlike a function
-    expression, function declaration is bound by the function name.
-    The fundamental difference between the two is that, function declarations are parsed 
-    before their execution. On the other hand, function expressions are parsed only when the script encounters it during execution. 
-    </li>
+> Function decalration & function expression are not synonymous.Unlike a function
+expression, function declaration is bound by the function name.
+The fundamental difference between the two is that, function declarations are parsed 
+before their execution. On the other hand, function expressions are parsed only when the
+script encounters it during execution. 
 
-```typescript
-    var nstr = (<HTMLInputElement>document.getElementById("inp1")).value 
-```
+
+> var nstr = (<HTMLInputElement>document.getElementById("inp1")).value 
+
 Visit [here](http://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement)
 
 
