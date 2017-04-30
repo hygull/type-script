@@ -1,3 +1,4 @@
+```typescript
 admins-MacBook-Pro-3:src admin$ node
 > 
 > //Creating objects in JavaScript
@@ -55,3 +56,4 @@ Darshan Sidar
 [ 'C', 'C++', 'Golang', 'Python', 'JavaScript' ]
 undefined
 > 
+```
