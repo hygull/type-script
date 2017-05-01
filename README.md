@@ -1902,7 +1902,9 @@ Publication :  TATA MacGraw Hill
 */
 ```
 
-Let us at another example. Here I will show you how to use the Person class defined above with Person class.
+Let us look at another example. 
+
+Here I will show you how to use the **Person** class defined above with **Book** class.
 
 First look at the file organization inside 19_namespaces.
 ```python
@@ -2014,7 +2016,97 @@ Favourite Books  :  [ Book {
 Compile and run 
 
 > $ tsc --outFile PersonCompiled.js PersonTest.ts 
+
 > $ node PersonCompiled.js
+
+
+Now I am going to present another simple example for you. That is nice and concise.
+
+This is a simple example using a class named Car which resides within CarNamespace.
+
+Now look at the code of 2 files *Car.ts* and *CarTest.ts*
+
+> Car.ts
+
+```typescript
+/*
+    {
+        "created_on" : "1 May 2017",
+        "aim_of_script" : "Using namespaces in TypeScript(Car example)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+namespace CarNamespace{
+    export class Car{
+        name : string
+        color : string
+        price : number
+        company : string
+    
+
+        constructor(cName:string, cColor:string,cPrice:number,cCompany:string){
+            this.name = cName
+            this.color = cColor
+            this.price = cPrice
+            this.company = cCompany
+        }
+
+
+        details():void{
+            let features:string[] = ["Name", "Color", "Price", "Company"]
+            let i = 0
+            for(let property in this){
+                if(typeof this[property] == "function")
+                    continue
+
+                console.log(features[i]," : ",this[property])
+                i += 1
+            }
+        }
+    }
+}
+```
+
+> CarTest.ts
+
+```typescript
+///<reference path = "Car.ts" />
+class CarTest{
+    showCarDetails(){
+        let myCar = new CarNamespace.Car("Lamborgini","Red", 3000000000,"Toyota")
+        myCar.details()
+    }
+}
+
+let carTest = new CarTest()
+carTest.showCarDetails()
+
+/*
+Name  :  Lamborgini
+Color  :  Red
+Price  :  3000000000
+Company  :  Toyota
+*/
+```
+
+Compile and run
+
+> $ ls
+
+Car.ts      CarCompiled.js  CarTest.ts
+
+> $ tsc --outFile CarCompiled.js  CarTest.ts 
+
+> $ node CarCompiled.js 
+
+> Name  :  Lamborgini
+
+> Color  :  Red
+
+> Price  :  3000000000
+
+> Company  :  Toyota
 
 <h1 style='color:green'>Notes</h1>
 
