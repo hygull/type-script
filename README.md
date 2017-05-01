@@ -1755,36 +1755,42 @@ Version  :  11.01
 ### Namespaces
 Namespace is defined a way to logically group related code.
 
-I has been introduced in TypeScript to overcome ~~Global namespace pollution problem~~ in JavaScript.
+I has been introduced in TypeScript to overcome *Global namespace pollution problem* in JavaScript.
 
-Visit [typescriptlang.org](http://www.typescriptlang.org/docs/handbook/namespaces.html)  and
-[tutorialspoint.com](https://www.tutorialspoint.com/typescript/typescript_namespaces.htm) to have a clear picture about the usage of namespaces. 
+Visit [typescriptlang.org](http://www.typescriptlang.org/docs/handbook/namespaces.html) and
+[tutorialspoint.com](https://www.tutorialspoint.com/typescript/typescript_namespaces.htm) to have a clear picture about the usage of namespaces.
 
-I am about to show you Book example that I have implemented using 2 different files named ~~Book.js~~ and ~~BookUser.js~~.
+*I am about to show you Book example that I have implemented using 2 different files named *Book.js* and *BookUser.js*.*
 
-The following code at the top of ~~BookUser.js~~ allows it to use the Classes and Namespaces defined in ~~Book.js~~
+*The following code at the top of *BookUser.js* allows it to use the Classes and Namespaces defined in *Book.js**
 
-> /// <reference path = "Book.ts" />
+> /// &lt;reference path = "Book.ts" /&gt;
 
-I compiled both the files ~~Book.ts~~ and ~~BookUser.ts~~ into a single JavaScript
-
-file named ~~BookCompiled.js~~ with following sequence of commands(ls is not required).
+*I compiled both the files *Book.ts* and *BookUser.ts* into a single JavaScript file named *BookCompiled.js* with following sequence of commands(ls is not required).*
 
 > $ ls
+
 > Book.ts     BookUser.ts
+
 > $ tsc --outFile BookCompiled.js BookUser.ts 
+
 > $ ls
+
 > Book.ts     BookCompiled.js BookUser.ts
 
 Finally I ran it using the follwing command.
 
 > $ node BookCompiled.js 
+
 > Book name :  Let us C
+
 > Author :  Y.P Kanetkar
+
 > Price :  450
+
 > Publication :  TATA MacGraw Hill
 
-Now let us look at the TypeScript code available in ~~Book.ts~~ and ~~BookUser.js~~
+Now let us look at the TypeScript code available in *Book.ts* and *BookUser.js*
 
 > Book.js
 
@@ -1895,6 +1901,120 @@ Price :  450
 Publication :  TATA MacGraw Hill
 */
 ```
+
+Let us at another example. Here I will show you how to use the Person class defined above with Person class.
+
+First look at the file organization inside 19_namespaces.
+```python
+19_namespaces
+├── book
+│   ├── Book.ts
+│   ├── BookCompiled.js
+│   └── BookUser.ts
+└── person
+    ├── Person.ts
+    ├── PersonCompiled.js
+    └── PersonTest.ts
+```
+
+> Person.ts
+
+```typescript
+/*
+    {
+        "created_on" : "1 May 2017",
+        "aim_of_script" : "To define the Person class inside PersonNamespace and use it with Person class",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+///<reference path = "../book/Book.ts" />
+
+namespace PersonNamespace{
+    export class Person{
+        name : string 
+        age : number
+        mobileNumber : number
+        hobbies : string[]
+        favBooks : BookNamespace.Book[]
+
+        constructor(pName:string,pAge:number,pMobileNumber:number,pHobbies:string[], pFavBooks:BookNamespace.Book[]){
+            this.name = pName
+            this.age = pAge
+            this.mobileNumber = pMobileNumber
+            this.hobbies = pHobbies
+            this.favBooks = pFavBooks
+        }   
+
+        details(){
+            let features:string[] = ["Name", "Age", "Mobile Number", "Hobbies", "Favourite Books"]
+            let i:number = 0
+            for(var property in this) {
+                if(typeof this[property] == "function"){
+                    continue
+                }
+                console.log(features[i]," : ",this[property])
+                console.log(".........................................")
+                i += 1
+            }
+        }
+    }
+}
+```
+
+> PersonTest.ts
+
+```typescript
+///<reference path = "Person.ts" />
+///<reference path = "../book/Book.ts"/>
+
+class PersonTest{
+    showPersonDetails(obj:PersonNamespace.Person){
+        obj.details()
+    }
+}
+
+var book1:BookNamespace.Book = new BookNamespace.Book("Let us C","Y.P Kanetkar", 450.67, "TATA Macgraw Hill")
+var book2:BookNamespace.Book = new BookNamespace.Book("Matering C++","Venugopal", 550.80, "Siksha publication")
+var books:BookNamespace.Book[] = [book1, book2]
+
+var hobbies:string[] = ["Programmig", "Playing chess", "Reading Books", "Watching Cricket"]
+
+var person = new PersonNamespace.Person("Rishikesh Agrawani", 24, 7353787704, hobbies, books)
+
+var personTest:PersonTest = new PersonTest()
+personTest.showPersonDetails(person) 
+
+/*
+Name  :  Rishikesh Agrawani
+.........................................
+Age  :  24
+.........................................
+Mobile Number  :  7353787704
+.........................................
+Hobbies  :  [ 'Programmig',
+  'Playing chess',
+  'Reading Books',
+  'Watching Cricket' ]
+.........................................
+Favourite Books  :  [ Book {
+    name: 'Let us C',
+    author: 'Y.P Kanetkar',
+    price: 450.67,
+    publication: 'TATA Macgraw Hill' },
+  Book {
+    name: 'Matering C++',
+    author: 'Venugopal',
+    price: 550.8,
+    publication: 'Siksha publication' } ]
+.........................................
+*/
+```
+
+Compile and run 
+
+> $ tsc --outFile PersonCompiled.js PersonTest.ts 
+> $ node PersonCompiled.js
 
 <h1 style='color:green'>Notes</h1>
 
