@@ -1,7 +1,7 @@
 /*
     {
         "created_at" : "19 April 2017",
-        "aim_of_script" : "Using forEach loop in TypeScript",
+        "aim_of_script" : "Using forEach() method in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
@@ -12,6 +12,7 @@ arr.forEach(
 		console.log(item)
 	}
 )
+
 /*
 1
 2

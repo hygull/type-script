@@ -317,7 +317,7 @@ printMessages("Raipur")
 ```
 
 
-### 4 loops and forEach() method(to iterate over arrays) in TypeScript
+### 5 loops and forEach() method(to iterate over arrays) in TypeScript
 1)  for loop
 ```javascript
 /*
@@ -395,17 +395,16 @@ for(var i:number=1; i<=10; i++)
 */
 ```
 
-2) for/in loop
+2) for...in loop
 ```javascript
 /*
     {
         "created_at" : "20 April 2017",
-        "aim_of_script" : "Using for/in in TypeScript",
+        "aim_of_script" : "Using for...in in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
 var arr:number[] = [ 12, 34, 56, 67, 89, 98.07, 67.67 ]
-
 
 var index
 for(index in arr){
@@ -422,7 +421,36 @@ for(index in arr){
 */
 ```
 
-3) while loop
+3) for...of loop 
+This loop is introduced in ES6 as unlike for..in loop, it allows us to iterate over the 
+array correctly logging out the members as expected.
+
+```typescript
+/*
+    {
+        "created_at" : "2 May 2017",
+        "aim_of_script" : "Using for...of loop in TypeScript(introduced in ES6)",
+        "coded_by" : "Rishikesh Agrawani",
+        "link" : "https://basarat.gitbooks.io/typescript/docs/for...of.html",
+    }
+*/
+
+var cities = ["Bangalore", "Raipur", "Dhamtari", "Kondagaon", "Lailunga"]
+
+for(let city of cities){
+    console.log(city)
+}
+
+/*
+Bangalore
+Raipur
+Dhamtari
+Kondagaon
+Lailunga
+*/
+```
+
+4) while loop
 ```javascript
 /*
     {
@@ -451,7 +479,7 @@ while( i < arr.length )
 ```
 
 
-4) do-while loop
+5) do-while loop
 ```javascript
 /*
     {
@@ -471,12 +499,12 @@ do
 }while( i < arr.length )   //Semicolon is optional at end
 ```
 
-5)  forEach() method 
+6)  forEach() method 
 ```javascript
 /*
     {
         "created_at" : "20 April 2017",
-        "aim_of_script" : "Using forEach loop in TypeScript",
+        "aim_of_script" : "Using forEach() method in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
