@@ -2163,6 +2163,9 @@ Rogert Rendrick Jemen Cartel Neuron
 ```
 
 ### Regular expressions
+
+Example 1
+
 ```typescript
 /*
     {
@@ -2193,6 +2196,91 @@ if(intRegex.test(s)){   //false
 /*
 123 is a +ve integer
 -123 is not a +ve integer that matches /^d+$/
+*/
+```
+
+
+Example 2
+```typescript
+/*
+    {
+        "created_at" : "2 May 2017",
+        "aim_of_script" : "Using regular expression in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+//To match the positive integers like 123, 234, 1, 34, +67, +345 etc. 
+var intRegex = /^(\+)?\d+$/
+
+var s:string = "123"
+
+if(intRegex.test(s)){   //true
+    console.log(s+" is a +ve integer")
+}else{
+    console.log(s+" is not a +ve integer that matches /^(\+)?\d+$/")
+}
+
+s = "-123"
+if(intRegex.test(s)){   //false
+    console.log(s+" is a +ve integer")
+}else{
+    console.log(s+" is not a +ve integer that matches  /^(\+)?\d+$/")
+}
+
+s = "+123"
+if(intRegex.test(s)){   //true
+    console.log(s+" is a +ve integer")
+}else{
+    console.log(s+" is not a +ve integer that matches  /^(\+)?\d+$/")
+}
+
+/*
+123 is a +ve integer
+-123 is not a +ve integer that matches  /^(+)?d+$/
++123 is a +ve integer
+*/
+```
+
+Example 3
+```typescript
+/*
+    {
+        "created_at" : "3 May 2017",
+        "aim_of_script" : "Using regular expression in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+//To match the positive integers like 12334, 64545, 87656, 67674 etc. 
+var intRegex = /^\d{5}$/
+
+var s:string = "12345"
+
+if(intRegex.test(s)){   //true
+    console.log(s+" is a +ve integer with 5 digits")
+}else{
+    console.log(s+" is not a +ve integer that matches /^\d{5}$/")
+}
+
+s = "1623"
+if(intRegex.test(s)){   //false
+    console.log(s+" is a +ve integer with 5 digits")
+}else{
+    console.log(s+" is not a +ve integer that matches  /^\d{5}$/")
+}
+
+s = "975657"
+if(intRegex.test(s)){   //false
+    console.log(s+" is a +ve integer with 5 digits")
+}else{
+    console.log(s+" is not a +ve integer that matches   /^\d{5}$/")
+}
+
+/*
+12345 is a +ve integer with 5 digits
+1623 is not a +ve integer that matches  /^d{5}$/
+975657 is not a +ve integer that matches   /^d{5}$/
 */
 ```
 
@@ -2241,47 +2329,6 @@ console.log(sum3)   //123
 */
 ```
 
-Example 2
-```typescript
-/*
-    {
-        "created_at" : "2 May 2017",
-        "aim_of_script" : "Using regular expression in TypeScript",
-        "coded_by" : "Rishikesh Agrawani",
-    }
-*/
-
-//To match the positive integers like 123, 234, 1, 34, +67, +345 etc. 
-var intRegex = /^(\+)?\d+$/
-
-var s:string = "123"
-
-if(intRegex.test(s)){   //true
-    console.log(s+" is a +ve integer")
-}else{
-    console.log(s+" is not a +ve integer that matches /^(\+)?\d+$/")
-}
-
-s = "-123"
-if(intRegex.test(s)){   //false
-    console.log(s+" is a +ve integer")
-}else{
-    console.log(s+" is not a +ve integer that matches  /^(\+)?\d+$/")
-}
-
-s = "+123"
-if(intRegex.test(s)){   //true
-    console.log(s+" is a +ve integer")
-}else{
-    console.log(s+" is not a +ve integer that matches  /^(\+)?\d+$/")
-}
-
-/*
-123 is a +ve integer
--123 is not a +ve integer that matches  /^(+)?d+$/
-+123 is a +ve integer
-*/
-```
 
 <h1 style='color:green'>Notes</h1>
 
