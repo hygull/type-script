@@ -2199,6 +2199,9 @@ if(intRegex.test(s)){   //false
 <h1>More examples</h1>
 
 ### Adding 2 integers without using + operator
+
+Example 1
+
 ```typescript
 /*
     {
@@ -2235,6 +2238,48 @@ console.log(sum3)   //123
 26
 90
 123
+*/
+```
+
+Example 2
+```typescript
+/*
+    {
+        "created_at" : "2 May 2017",
+        "aim_of_script" : "Using regular expression in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+//To match the positive integers like 123, 234, 1, 34, +67, +345 etc. 
+var intRegex = /^(\+)?\d+$/
+
+var s:string = "123"
+
+if(intRegex.test(s)){   //true
+    console.log(s+" is a +ve integer")
+}else{
+    console.log(s+" is not a +ve integer that matches /^(\+)?\d+$/")
+}
+
+s = "-123"
+if(intRegex.test(s)){   //false
+    console.log(s+" is a +ve integer")
+}else{
+    console.log(s+" is not a +ve integer that matches  /^(\+)?\d+$/")
+}
+
+s = "+123"
+if(intRegex.test(s)){   //true
+    console.log(s+" is a +ve integer")
+}else{
+    console.log(s+" is not a +ve integer that matches  /^(\+)?\d+$/")
+}
+
+/*
+123 is a +ve integer
+-123 is not a +ve integer that matches  /^(+)?d+$/
++123 is a +ve integer
 */
 ```
 
