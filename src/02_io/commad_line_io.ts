@@ -8,7 +8,7 @@
     }
 */
 declare var require : any	//I got a hint to include
-declare var process : any	//these 2 lines from the helper link, finally I succeeded
+declare var process : any	//these 2 lines from the helper_link, finally I succeeded
 
 var readline = require("readline")
 
