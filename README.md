@@ -422,6 +422,7 @@ for(index in arr){
 ```
 
 3) for...of loop 
+
 This loop is introduced in ES6 as unlike for..in loop, it allows us to iterate over the 
 array correctly logging out the members as expected.
 
@@ -2161,6 +2162,47 @@ Rogert Rendrick Jemen Cartel Neuron
 */
 ```
 
+<h1>More examples</h1>
+### Adding 2 integers without using + operator
+```typecript
+/*
+    {
+        "created_at" : "2 May 2017",
+        "aim_of_script" : "Adding 2 integer numbers without using + operator",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function adder(number1:number, number2:number){
+    while(number2){
+        //The positions where there are similar bits, will be ON
+        var carry = number1 & number2
+
+        //The positions where there are dissimilar bits, will be ON
+        number1 = number1 ^ number2
+
+        //Forwording bits to left
+        number2 = carry << 1
+    }
+    return number1
+}
+
+var sum:number = adder(12,14)
+console.log(sum)    //26
+
+var sum2:number = adder(34,56)
+console.log(sum2)   //90
+
+var sum3:number = adder(56,67)
+console.log(sum3)   //123
+
+/*
+26
+90
+123
+*/
+```
+
 <h1 style='color:green'>Notes</h1>
 
 > Function decalration & function expression are not synonymous.Unlike a function
@@ -2171,8 +2213,6 @@ script encounters it during execution.
 
 
 > var nstr = (&lt;HTMLInputElement&gt;document.getElementById("inp1")).value<br>Visit [here](http://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement)
-
-
 
 
 <h1>Todo List</h1>
