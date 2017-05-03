@@ -20,14 +20,14 @@ if(intRegex.test(s)){	//true
 }
 
 s = "Rishikesh"
-if(intRegex.test(s)){	//true
+if(intRegex.test(s)){	//false
 	console.log(s+" contains only small case letters")
 }else{
 	console.log(s+" is not a string that matches /^[a-z]+$/")
 }
 
 s = "abcd#"
-if(intRegex.test(s)){	//true
+if(intRegex.test(s)){	//false
 	console.log(s+" contains only small case letters")
 }else{
 	console.log(s+" is not a string that matches /^[a-z]+$/")

@@ -2308,14 +2308,14 @@ if(intRegex.test(s)){   //true
 }
 
 s = "Rishikesh"
-if(intRegex.test(s)){   //true
+if(intRegex.test(s)){   //false
     console.log(s+" contains only small case letters")
 }else{
     console.log(s+" is not a string that matches /^[a-z]+$/")
 }
 
 s = "abcd#"
-if(intRegex.test(s)){   //true
+if(intRegex.test(s)){   //false
     console.log(s+" contains only small case letters")
 }else{
     console.log(s+" is not a string that matches /^[a-z]+$/")
@@ -2381,9 +2381,63 @@ The fundamental difference between the two is that, function declarations are pa
 before their execution. On the other hand, function expressions are parsed only when the
 script encounters it during execution. 
 
-
 > var nstr = (&lt;HTMLInputElement&gt;document.getElementById("inp1")).value<br>Visit [here](http://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement)
 
+> TypeScript
+
+```typescript
+> /^[0-9]+$/.test("123")
+true
+> /^[0-9]+$/.test("123a")
+false
+> /^[0-9]+$/.test("123#")
+false
+> /^[0-9]+$/.test("00012")
+true
+> /^[0-9]+$/.test("+12")
+false
+> 
+> /^(\+)?[0-9]+$/.test("+12")
+true
+> /^(\+)?[0-9]+$/.test("12")
+true
+> /^(\+)?[0-9]+$/.test("++12")
+false
+> /^(\+)?[0-9]+$/.test("-12")
+false
+> 
+> /^(\+|\-)?[0-9]+$/.test("-12")
+true
+> /^(\+|\-)?[0-9]+$/.test("+12")
+true
+> /^(\+|\-)?[0-9]+$/.test("12")
+true
+> 
+> /^[a-z]+$/.test("abcd")
+true
+> /^[a-z]+$/.test("Abcd")
+false
+> /^[a-z]+$/.test("rishikesh")
+true
+> /^[a-z]+$/.test("rishikesh67")
+false
+> 
+> /^[a-z0-9]+$/.test("rishikesh67")
+true
+> /^[a-z0-9]+$/.test("rogert67rendrick1729")
+true
+> /^[a-z0-9]+$/.test("rogert67rendrick1729@gmail")
+false
+> /^[a-z0-9]+$/.test("rogert#$")
+false
+> 
+> /^[A-Z]+$/.test("rishikesh")
+false
+> /^[A-Z]+$/.test("RISHIKESH")
+true
+> /^[A-Z]+$/.test("RISH1729I")
+false
+```
 
 <h1>Todo List</h1>
 <ol type="1">
