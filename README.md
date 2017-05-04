@@ -2412,7 +2412,7 @@ A sentence formed using  [ 'Bangalore', ' is ', ' cool ', ' place.' ]  is  Banga
 */
 ```
 
-<h3>Selection sort on arrays of integers</h3>
+### Selection sort on arrays of integers
 
 ```typescript
 /*
@@ -2465,7 +2465,7 @@ Example 2
 */
 ```
 
-<h3>Finding the maximum integer among 3 integers using nested if-else</h3>
+### Finding the maximum integer among 3 integers using nested if-else
 ```typescript
 /*
     {
@@ -2511,7 +2511,7 @@ console.log(maximum(-1, -4, -6) + " is maximum among -1, -4 & -6")
 */
 ```
 
-<h1 style='color:green'>Notes</h1>
+# Notes
 
 > Function decalration & function expression are not synonymous.Unlike a function
 expression, function declaration is bound by the function name.
@@ -2521,7 +2521,7 @@ script encounters it during execution.
 
 > var nstr = (&lt;HTMLInputElement&gt;document.getElementById("inp1")).value<br>Visit [here](http://stackoverflow.com/questions/12989741/the-property-value-does-not-exist-on-value-of-type-htmlelement)
 
-<h4>Regular expression - examples</h4>
+#### Regular expression - examples
 
 ```typescript
 > /^[0-9]+$/.test("123")
