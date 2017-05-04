@@ -14,7 +14,7 @@ function adder(number1:number, number2:number){
 		//The positions where there are dissimilar bits, will be ON
 		number1 = number1 ^ number2
 
-		//Forwording bits to left
+		//Forwarding bits to left
 		number2 = carry << 1
 	}
 	return number1

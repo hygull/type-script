@@ -2373,6 +2373,98 @@ console.log(sum3)   //123
 */
 ```
 
+### Addition and concatenation( using unions in TypeScript)
+```typescript
+/*
+    {
+        "created_at" : "4 May 2017",
+        "aim_of_script" : "Using Union of arrays in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+var anyArr : number[] | string[]
+
+//Creating an array of integers
+anyArr = [ 1, 45, 67, 89 ]
+
+//Adding all the numbers in array
+let s:number = 0
+for(var value of anyArr){
+    s += value
+}
+
+console.log("Sum of all the elements in ",anyArr, " is ", s)
+
+//Creating an array of strings
+anyArr = ["Bangalore", " is ", " cool ", " place."]
+let s2:string = ""
+
+for(let city of anyArr){
+    s2 += city
+}
+
+console.log("A sentence formed using ",anyArr, " is ",s2)
+
+/*
+Sum of all the elements in  [ 1, 45, 67, 89 ]  is  202
+A sentence formed using  [ 'Bangalore', ' is ', ' cool ', ' place.' ]  is  Bangalore is  cool  place.
+*/
+```
+
+<h3>Selection sort on arrays of integers</h3>
+
+```typescript
+/*
+    {
+        "created_at" : "3 May 2017",
+        "aim_of_script" : "To implement selection sort",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function selectionSort(a:number[]){
+    let n:number = a.length
+
+    for(let i=0; i<(n-1);i++){
+        let minIndex:number = i
+
+        for(let j=i+1; j<n; j++){ //Finding the index with minimum value
+            if(a[j] < a[minIndex]){
+                minIndex = j
+            }
+        }
+
+        let temp:number = a[minIndex]
+        a[minIndex] = a[i]
+        a[i] = temp
+    }
+}
+
+console.log("Example 1")
+let arr:number[] = [12, 34, 5, 0, 40, 2, 7, 50, 42]
+console.log(arr)
+
+selectionSort(arr)  //reference, arrays are objects
+console.log(arr)
+
+console.log("Example 2")
+let arr2:number[] = [99,-2, 12, -1, 55, 34, 5, 0, 8]
+console.log(arr2)
+
+selectionSort(arr2) //reference, arrays are objects
+console.log(arr2)
+
+/*
+Example 1
+[ 12, 34, 5, 0, 40, 2, 7, 50, 42 ]
+[ 0, 2, 5, 7, 12, 34, 40, 42, 50 ]
+Example 2
+[ 99, -2, 12, -1, 55, 34, 5, 0, 8 ]
+[ -2, -1, 0, 5, 8, 12, 34, 55, 99 ]
+*/
+```
+
 <h1 style='color:green'>Notes</h1>
 
 > Function decalration & function expression are not synonymous.Unlike a function
@@ -2439,56 +2531,7 @@ true
 false
 ```
 
-<h4>Selection sort on arrays of integers</h4>
-```typescript
-/*
-    {
-        "created_at" : "3 May 2017",
-        "aim_of_script" : "To implement selection sort",
-        "coded_by" : "Rishikesh Agrawani",
-    }
-*/
-function selectionSort(a:number[]){
-    let n:number = a.length
 
-    for(let i=0; i<(n-1);i++){
-        let minIndex:number = i
-
-        for(let j=i+1; j<n; j++){ //Finding the index with minimum value
-            if(a[j] < a[minIndex]){
-                minIndex = j
-            }
-        }
-
-        let temp:number = a[minIndex]
-        a[minIndex] = a[i]
-        a[i] = temp
-    }
-}
-
-console.log("Example 1")
-let arr:number[] = [12, 34, 5, 0, 40, 2, 7, 50, 42]
-console.log(arr)
-
-selectionSort(arr)  //reference, arrays are objects
-console.log(arr)
-
-console.log("Example 2")
-let arr2:number[] = [99,-2, 12, -1, 55, 34, 5, 0, 8]
-console.log(arr2)
-
-selectionSort(arr2) //reference, arrays are objects
-console.log(arr2)
-
-/*
-Example 1
-[ 12, 34, 5, 0, 40, 2, 7, 50, 42 ]
-[ 0, 2, 5, 7, 12, 34, 40, 42, 50 ]
-Example 2
-[ 99, -2, 12, -1, 55, 34, 5, 0, 8 ]
-[ -2, -1, 0, 5, 8, 12, 34, 55, 99 ]
-*/
-```
 
 <h1>Todo List</h1>
 <ol type="1">
