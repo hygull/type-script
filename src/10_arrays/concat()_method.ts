@@ -26,7 +26,7 @@ var c1:string[] = ["Bilaspur","Gurgaon"]
 var c2:string[] = ["Ompur", "Vyom"]
 
 console.log("Concatenating ", c1 , " and ", c2 , " with ",cities )
-cities = cities.concat(["Bilaspur","Gurgaon"],["Ompur", "Vyom"])
+cities = cities.concat(c1,c2)
 console.log(cities)
 
 /*

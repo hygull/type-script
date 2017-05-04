@@ -20,7 +20,7 @@ var cities = ["Bangalore", "kondagaon"];
 var c1 = ["Bilaspur", "Gurgaon"];
 var c2 = ["Ompur", "Vyom"];
 console.log("Concatenating ", c1, " and ", c2, " with ", cities);
-cities = cities.concat(["Bilaspur", "Gurgaon"], ["Ompur", "Vyom"]);
+cities = cities.concat(c1, c2);
 console.log(cities);
 /*
 [ 1, 2, 5, 67, 89, 34, 56 ]
