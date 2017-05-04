@@ -2474,13 +2474,12 @@ Example 2
         "coded_by" : "Rishikesh Agrawani",
     }
 */
+
 function maximum(a:number, b:number, c:number){
     var maxNumber:number = a
     
     if(a > b){
-        if(a > c){
-            maxNumber = a
-        } else {
+        if(c >a) {
             maxNumber = c
         }
     }else{
@@ -2508,6 +2507,38 @@ console.log(maximum(-1, -4, -6) + " is maximum among -1, -4 & -6")
 45 is maximum among 12, 45 & 5
 56 is maximum among 12, 12 & 56
 -1 is maximum among -1, -4 & -6
+*/
+```
+
+### Using push() method on arrays 
+```typescript
+/*
+    {
+        "created_at" : "4 May 2017",
+        "aim_of_script" : "Using push() method",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+var arr:number[] = [1, 2, 5, 67, 89, 34, 56]
+
+console.log(arr)
+
+//Adding(Pushing elements to array)
+console.log("Pushing 12...")
+arr.push(12)
+console.log(arr)
+
+console.log("Pushing 13, 56, 78...")
+arr.push(13, 56, 78)
+console.log(arr)
+
+/*
+[ 1, 2, 5, 67, 89, 34, 56 ]
+Pushing 12...
+[ 1, 2, 5, 67, 89, 34, 56, 12 ]
+Pushing 13, 56, 78...
+[ 1, 2, 5, 67, 89, 34, 56, 12, 13, 56, 78 ]
 */
 ```
 

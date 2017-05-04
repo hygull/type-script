@@ -9,9 +9,7 @@ function maximum(a:number, b:number, c:number){
 	var maxNumber:number = a
 	
 	if(a > b){
-		if(a > c){
-			maxNumber = a
-		} else {
+		if(c >a) {
 			maxNumber = c
 		}
 	}else{
