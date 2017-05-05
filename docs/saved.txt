@@ -1,0 +1,27 @@
+/*
+    {
+        "created_at" : "5 May 2017",
+        "aim_of_script" : "To implement insert sort(Ascending order)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+//Stable sorting algorithm
+function insertionSort(a:number[]){
+	var n:number = a.length
+
+	for(var i:number=1; i<n; i++){
+		
+				var temp = a[j]	//Save the min value
+
+				for(var k=j-1; k>=i; k--){ //Shift the elements
+					a[k+1] = a[k]
+				}
+
+				a[i] = temp //Place the min value
+			}
+		}
+	}
+}
+
+let arr:number[] = [ 2, 1, 4, 0, 5, 3, 9, 7, 8, 11, 8]
