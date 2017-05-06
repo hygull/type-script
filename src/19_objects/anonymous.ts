@@ -1,7 +1,7 @@
 /*
     {
         "created_at" : "30 April 2017",
-        "aim_of_script" : "To represent the use of nonymous object in TypeScript",
+        "aim_of_script" : "To represent the use of anonymous object in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */

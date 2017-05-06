@@ -9,7 +9,7 @@ var arr = [1, 2, 5, 67, 89, 34, 56];
 console.log(arr);
 //Adding elements to array
 console.log("Adding 12 at position 3...");
-arr.splice(3, 0, 12); //postion(required), no. of items to be removed, item to be added
+arr.splice(3, 0, 12); //position(required), no. of items to be removed, item to be added
 console.log(arr);
 console.log("Adding 13, 56, 78 starting at postion 5...");
 arr.splice(5, 0, 13, 56, 78);
@@ -22,5 +22,13 @@ console.log("Removing 2 contiguous items starting from index 2...");
 arr.splice(2, 2);
 console.log(arr);
 /*
-
+[ 1, 2, 5, 67, 89, 34, 56 ]
+Adding 12 at position 3...
+[ 1, 2, 5, 12, 67, 89, 34, 56 ]
+Adding 13, 56, 78 starting at postion 5...
+[ 1, 2, 5, 12, 67, 13, 56, 78, 89, 34, 56 ]
+Removing item from position 4...
+[ 1, 2, 5, 12, 13, 56, 78, 89, 34, 56 ]
+Removing 2 contiguous items starting from index 2...
+[ 1, 2, 13, 56, 78, 89, 34, 56 ]
 */ 

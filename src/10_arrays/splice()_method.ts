@@ -12,7 +12,7 @@ console.log(arr)
 
 //Adding elements to array
 console.log("Adding 12 at position 3...")
-arr.splice(3, 0, 12)	//postion(required), no. of items to be removed, item to be added
+arr.splice(3, 0, 12)	//position(required), no. of items to be removed, item to be added
 console.log(arr)
 
 console.log("Adding 13, 56, 78 starting at postion 5...")

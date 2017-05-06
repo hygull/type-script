@@ -1713,7 +1713,7 @@ printKeys
 /*
     {
         "created_at" : "30 April 2017",
-        "aim_of_script" : "To represent the use of nonymous object in TypeScript",
+        "aim_of_script" : "To represent the use of anonymous object in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
@@ -2841,7 +2841,39 @@ true
 false
 ```
 
+#### continue keyword
 
+```typescript
+/*
+    {
+        "created_at" : "6 May 2017",
+        "aim_of_script" : "Displaying all the numbers(of an array) greater than 60",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+var arr:number[] = [12, 67, 4, 0, 56, 98, 25, 61, 6,-2,70]
+
+for(var item of arr) {
+    if(item > 60) {
+        console.log(item)
+    }else{
+        continue  //Continue with next iteration and skip the execution of succeeding statement(s)
+    }
+    console.log("Programming is awesome.")
+}
+
+/*
+67
+Programming is awesome.
+98
+Programming is awesome.
+61
+Programming is awesome.
+70
+Programming is awesome.
+*/
+```
 
 <h1>Todo List</h1>
 <ol type="1">
