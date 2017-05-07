@@ -1243,6 +1243,8 @@ string
 Class is a blueprint for creating objects. A class encapsulates data for object.
 TypeScript gets this feature from ES6.
 
+More details on class can be found [here](https://www.typescriptlang.org/docs/handbook/classes.html)
+
 class keyword is used to declare a class in TypeScript.
 ```typescript
 /*
@@ -1361,7 +1363,7 @@ Total numebr of students :  8000
 
 Inheritance is defined as the mechanism of deriving a new class from the existing one.
 
-Inheritance extends the capability of Child class by adding some additional features or attributes to it.
+Inheritance extends the capability of Child class by adding some additional features or attributes to it. Visit to [quick look at wiki](https://github.com/hygull/type-script/wiki/inheritance).
 
 ```typescript
     /**
@@ -1397,11 +1399,12 @@ class Child extends Father{
 
     //Constructor that creates object for Child class
     constructor(name:string, age:number, isMarried:boolean) {
+        //Passing parameters to Parent's constructor
         super(name, age)
         this.isMarried = isMarried
     }
 
-    //Method that prints the mariatl status of the current(invoking) object
+    //Method that prints the marital status of the current(invoking) object
     //It is clear that Father is married so only Child need to have this method
     getMaritalStatus() {
         console.log(`Marital status : ${this.isMarried}`)
@@ -2927,6 +2930,8 @@ false
 
 #### continue keyword
 
+Example 1
+
 ```typescript
 /*
     {
@@ -2956,6 +2961,64 @@ Programming is awesome.
 Programming is awesome.
 70
 Programming is awesome.
+*/
+```
+
+Example 2 (Removing duplications from array of integers)
+
+```typescript
+/**
+    {
+        "created_at" : "7 May 2017",
+        "aim_of_script" : "Removing duplicates of an array in TypeScript",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function removeDuplicates(arr:number[]):number[] {
+    //Defining a blank array
+    let tempArr:number[] = []
+
+    for(let item of arr) {
+        if(tempArr.indexOf(item) > -1) {
+            //If item already exists then do not add it and continue
+            continue    
+        }
+        tempArr.splice(tempArr.length,  0, item)
+    }
+    return tempArr
+}
+
+//Definintion of main() function
+function main(){
+    let array = [34, 5, 1, 34, 67, 23, 6, 67, 5, 1, 3, 5, 67, 34]
+    console.log("Array1:-")
+    console.log(array)
+    console.log("Removing duplicates...")
+    console.log(removeDuplicates( array ))
+
+    console.log()
+
+    let array2 = [ 3, 55, -1, 66, 67, 34, 67, -33, 55, 5, 1, -33, -1, 5, 67, 3 ]
+    console.log("Array2:-")
+    console.log(array2)
+    console.log("Removing duplicates...")
+    console.log(removeDuplicates( array2 ))
+}
+
+//Calling starter { main() } function
+main()
+
+/**
+Array1:-
+[ 34, 5, 1, 34, 67, 23, 6, 67, 5, 1, 3, 5, 67, 34 ]
+Removing duplicates...
+[ 34, 5, 1, 67, 23, 6, 3 ]
+
+Array2:-
+[ 3, 55, -1, 66, 67, 34, 67, -33, 55, 5, 1, -33, -1, 5, 67, 3 ]
+Removing duplicates...
+[ 3, 55, -1, 66, 67, 34, -33, 5, 1 ]
 */
 ```
 

@@ -31,11 +31,12 @@ class Child extends Father{
 
 	//Constructor that creates object for Child class
 	constructor(name:string, age:number, isMarried:boolean) {
-		super(name, age)
+		//Passing parameters to Parent's constructor
+		super(name, age)	
 		this.isMarried = isMarried
 	}
 
-	//Method that prints the mariatl status of the current(invoking) object
+	//Method that prints the marital status of the current(invoking) object
 	//It is clear that Father is married so only Child need to have this method
 	getMaritalStatus() {
 		console.log(`Marital status : ${this.isMarried}`)
@@ -61,7 +62,6 @@ function main() {
 
 //Calling the Starter main() function
 main();
-
 
 /**
 Father:-
