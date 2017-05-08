@@ -1,0 +1,22 @@
+```typescript
+> add = (a,b) => a + b 
+[Function: add]
+> add(45, 67)
+112
+> 
+> sum = (arr) => {
+... s = 0
+... for(item of arr){
+..... s += item
+..... }
+... return s
+... }
+[Function: sum]
+> 
+> sum( [12, 34, 56, 78, 89])
+269
+> 
+> sum( [12, 36, 48])
+96
+> 	
+```

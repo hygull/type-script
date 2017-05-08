@@ -1,3 +1,4 @@
+```typescript
 > 
 > /^[0-9]+$/.test("123")
 true
@@ -42,3 +43,4 @@ true
 true
 > /^[^0-9]+$/.test("As@12")
 false
+```
