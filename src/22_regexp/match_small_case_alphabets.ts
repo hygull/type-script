@@ -1,6 +1,6 @@
 /*
     {
-        "created_at" : "3 May 2017",
+        "created_on" : "3 May 2017",
         "aim_of_script" : "Using regular expression in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
