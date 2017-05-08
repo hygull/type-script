@@ -1,6 +1,6 @@
 /**
     {
-        "created_at" : "6 May 2017",
+        "created_at" : "7 May 2017",
         "aim_of_script" : "Displaying result based on pecentage",
         "coded_by" : "Rishikesh Agrawani",
 	}

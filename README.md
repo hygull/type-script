@@ -3027,7 +3027,7 @@ Removing duplicates...
 ```typescript
 /**
     {
-        "created_at" : "6 May 2017",
+        "created_at" : "7 May 2017",
         "aim_of_script" : "Using super keyword (to call parent's method) in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
@@ -3097,7 +3097,7 @@ Food type   : Indian
 ```typescript
 /**
     {
-        "created_at" : "6 May 2017",
+        "created_at" : "7 May 2017",
         "aim_of_script" : "Displaying result based on pecentage",
         "coded_by" : "Rishikesh Agrawani",
     }
