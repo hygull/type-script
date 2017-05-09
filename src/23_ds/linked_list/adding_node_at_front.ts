@@ -1,7 +1,7 @@
 /*
     {
         "created_on" : "9 May 2017",
-        "aim_of_script" : "Inserting nodes at the beginning of the singly linked list",
+        "aim_of_script" : "Inserting nodes at front of singly linked list in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
@@ -18,7 +18,7 @@ class SllNode {
 	}
 
 	//A method that displays the data  present in each node of the singly linked list.
-	displayNodes(root:SllNode){
+	displayNodes(root:SllNode) {
 
 		let temp:SllNode = root
 
@@ -28,66 +28,38 @@ class SllNode {
 		}
 	}
 
-	insertNodesAtBeginning(root:SllNode, node:SllNode) {
-
-		if(root == null ) { //If there is no any node in linked list
+	//Inserting nodes at the beginning of the singly linked list
+	insertNodesAtFront(root:SllNode,node:SllNode) {
+		if(root == null) {
 			root = node
-		} else { //If linked list has some nodes
-			node.next = root 
-			root = node
+		} else {
+			node.next = root
+			root = node 
 		}
-
 		return root
 	}
 }
 
 //Starter main() function
 function main(){
-	console.log("Creating linked list by inserting nodes at front\n")
-
-	//Initially linked list is empty
 	let root = null
+	let node1:SllNode = new SllNode(12)
+	node1.next = new SllNode(14)
+	node1.next.next = new SllNode("Bangalore")
+	node1.next.next.next = new SllNode(23)
+	node1.next.next.next.next = new SllNode("Raipur")
 
-	let node = new SllNode(14)
-	console.log("Adding node with data : 14")
-	root = node.insertNodesAtBeginning(root, node)
-
-	node = new SllNode(12)
-	console.log("Adding node with data : 12")
-	root = node.insertNodesAtBeginning(root, node)
-
-	node = new SllNode("Bangalore")
-	console.log("Adding node with data : Bangalore")
-	root = node.insertNodesAtBeginning(root, node)
-
-	node = new SllNode(56)
-	console.log("Adding node with data : 56")
-	root = node.insertNodesAtBeginning(root, node)
-
-	node = new SllNode("Raipur")
-	console.log("Adding node with data : Raipur")
-	root = node.insertNodesAtBeginning(root, node)
-
-	console.log("\nNow linked list contains the following data on nodes:-")
-	node.displayNodes(root)
+	console.log("")
+	node1.displayNodes(node1)
 }
 
 //Calling main() function
 main()
 
-/**
-Creating linked list by inserting nodes at front
-
-Adding node with data : 14
-Adding node with data : 12
-Adding node with data : Bangalore
-Adding node with data : 56
-Adding node with data : Raipur
-
-Now linked list contains the following data on nodes:-
-Raipur
-56
-Bangalore
+/*
 12
 14
+Bangalore
+23
+Raipur
 */
