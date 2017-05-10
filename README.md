@@ -3279,7 +3279,7 @@ function multiplier(m1:number[][], m2:number[][]):number[][] {
     return m3
 }
 
-//A funtion that shows the content of matrices
+//A function that shows the content of matrix
 function show(m:number[][]) {
     let row:number = m.length
     let column:number = m[0].length
