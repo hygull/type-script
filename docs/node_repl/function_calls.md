@@ -1,4 +1,4 @@
-
+```typescript
 > getTrue = () => true
 [Function: getTrue]
 > 
@@ -28,3 +28,4 @@ undefined
 Hello programmers
 undefined
 > 
+```
