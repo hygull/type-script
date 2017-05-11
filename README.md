@@ -2552,7 +2552,7 @@ Example 2
 */
 ```
 
-### Selection sort on array of integers
+### Insertion sort on array of integers
 
 ```typescript
 /*
@@ -2586,7 +2586,7 @@ function insertionSort(a:number[]){
     return a
 }
 
-//Stater 
+//Starter main() function 
 function main() {
     console.log("Example 1")
     let arr:number[] = [-12, -34, 5, -0, 40, -2, 7, 50, 42]
@@ -2610,6 +2610,7 @@ function main() {
     console.log(arr3)
 }
 
+//Calling main() function
 main();
 
 /*
