@@ -23,7 +23,7 @@ undefined
 > function getAllEvens(){
 ... while (1) {
 .....  	value = arr.find( isEven )
-.....  	if( value!== undefined ) {	//if(value) ==> if(value == undefined) 
+.....  	if( value!== undefined ) {	
 .......   		console.log(value)
 .......   		arr.splice(arr.indexOf(value), 1)
 .......  	}else{
