@@ -3469,6 +3469,7 @@ for(var i:number=1; i<11; i++) {
 # Tiny programs for beginners
 
 #### Star pattern - Left aligned down densed 
+
 ```typescript
 /*
     {
@@ -3504,6 +3505,7 @@ starPattern(10)
 ```
 
 #### Star pattern - Right aligned down densed
+
 ```typescript
 /*
     {
@@ -3540,6 +3542,46 @@ starPattern(10)
     *   *   *   *   *   *   *   *   *   
 *   *   *   *   *   *   *   *   *   *   
 
+*/
+```
+
+#### Star pattern - Right aligned up densed
+
+```typescript
+/*
+    {
+        "created_at" : "14 May 2017",
+        "aim_of_script" : "Printing start pattern (Type3)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function starPattern(rows:number) {
+    for( let row:number=1; row <= rows; ++row) {
+            let s = ""
+            for( let column:number=1; column<=rows; ++column) {
+                if( column >= row )
+                    s += "*\t"
+                else
+                    s += " \t"
+            }
+            console.log(s)
+    }
+}
+
+starPattern(10)
+
+/*
+*   *   *   *   *   *   *   *   *   *   
+    *   *   *   *   *   *   *   *   *   
+        *   *   *   *   *   *   *   *   
+            *   *   *   *   *   *   *   
+                *   *   *   *   *   *   
+                    *   *   *   *   *   
+                        *   *   *   *   
+                            *   *   *   
+                                *   *   
+                                    *
 */
 ```
 
