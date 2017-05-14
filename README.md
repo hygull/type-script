@@ -3466,6 +3466,83 @@ for(var i:number=1; i<11; i++) {
 */
 ```
 
+# Tiny programs for beginners
+
+#### Star pattern - Left aligned down densed 
+```typescript
+/*
+    {
+        "created_at" : "14 May 2017",
+        "aim_of_script" : "Printing start pattern (Type1)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function starPattern(rows:number) {
+    for( let row:number=1; row<rows; ++row) {
+            let s=""
+            for( let column:number=1; column<=row; ++column) {
+                s += "*\t"
+            }
+            console.log(s)
+    }
+}
+
+starPattern(10)
+
+/*
+*   
+*   *   
+*   *   *   
+*   *   *   *   
+*   *   *   *   *   
+*   *   *   *   *   *   
+*   *   *   *   *   *   *   
+*   *   *   *   *   *   *   *   
+*   *   *   *   *   *   *   *   *
+*/
+```
+
+#### Star pattern - Right aligned down densed
+```typescript
+/*
+    {
+        "created_at" : "14 May 2017",
+        "aim_of_script" : "Printing start pattern (Type2)",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function starPattern(rows:number) {
+    for( let row:number=1; row <= rows; ++row) {
+            let s = ""
+            for( let column:number=1; column<=rows; ++column) {
+                if( (row+column) >= (rows+1) )
+                    s += "*\t"
+                else
+                    s += " \t"
+            }
+            console.log(s)
+    }
+}
+
+starPattern(10)
+
+/*
+                                    *   
+                                *   *   
+                            *   *   *   
+                        *   *   *   *   
+                    *   *   *   *   *   
+                *   *   *   *   *   *   
+            *   *   *   *   *   *   *   
+        *   *   *   *   *   *   *   *   
+    *   *   *   *   *   *   *   *   *   
+*   *   *   *   *   *   *   *   *   *   
+
+*/
+```
+
 # Notes
 
 > Function decalration & function expression are not synonymous.Unlike a function
