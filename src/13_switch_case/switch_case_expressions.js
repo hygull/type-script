@@ -23,7 +23,7 @@ function printMessages(n) {
             console.log("This is 62");
             break;
         default:
-            console.log("I didn't find any valid number");
+            console.log("I didn't find any valid number or string");
     }
 }
 var arr = [9, 39, 11.25, 62];
@@ -32,3 +32,11 @@ for (var i = 0; i < arr.length; i++) {
 }
 printMessages("Nagpur");
 printMessages("Raipur");
+/*
+This is 9
+This is 39
+This is 11.25
+This is 62
+This is Nagpur
+I didn't find any valid number or string
+*/

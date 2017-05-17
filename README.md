@@ -301,7 +301,7 @@ function printMessages(n:number|string){ //Unions
                     console.log("This is 62")
                     break
         default:
-                    console.log("I didn't find any valid number")
+                    console.log("I didn't find any valid number or string")
     }
 }
 
@@ -314,6 +314,15 @@ for(var i:number=0;i<arr.length;i++){
 printMessages("Nagpur")
 
 printMessages("Raipur")
+
+/*
+This is 9
+This is 39
+This is 11.25
+This is 62
+This is Nagpur
+I didn't find any valid number or string
+*/
 ```
 
 
@@ -3706,6 +3715,50 @@ starPattern(8)
 
 */
 ```
+
+#### Cross inside box pattern 
+
+```tyoescript
+/*
+    {
+        "created_at" : "14 May 2017",
+        "aim_of_script" : "cross inside box pattern",
+        "coded_by" : "Rishikesh Agrawani",
+    }
+*/
+
+function starPattern(rows:number) {
+    for( let row:number=1; row <= rows; ++row) {
+            let s=""
+            for( let column:number=1; column <= rows; ++column) {
+                if( (row ==1 || row == rows || column == 1 || 
+                    column == rows || row == column) || (row + column == rows +1) )
+                    s += "* "
+                else
+                    s += "  "
+            }
+            console.log(s)
+    }
+}
+
+starPattern(10)
+
+/*
+
+* * * * * * * * * * 
+* *             * * 
+*   *         *   * 
+*     *     *     * 
+*       * *       * 
+*       * *       * 
+*     *     *     * 
+*   *         *   * 
+* *             * * 
+* * * * * * * * * * 
+
+*/
+```
+
 
 # Notes
 
