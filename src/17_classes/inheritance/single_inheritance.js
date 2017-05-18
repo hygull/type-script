@@ -1,7 +1,7 @@
 /**
     {
         "created_at" : "7 May 2017",
-        "aim_of_script" : "Using inheritance in TypeScript",
+        "aim_of_script" : "Using single inheritance in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
@@ -35,11 +35,13 @@ var Child = (function (_super) {
     __extends(Child, _super);
     //Constructor that creates object for Child class
     function Child(name, age, isMarried) {
-        var _this = _super.call(this, name, age) || this;
+        var _this = 
+        //Passing parameters to Parent's constructor
+        _super.call(this, name, age) || this;
         _this.isMarried = isMarried;
         return _this;
     }
-    //Method that prints the mariatl status of the current(invoking) object
+    //Method that prints the marital status of the current(invoking) object
     //It is clear that Father is married so only Child need to have this method
     Child.prototype.getMaritalStatus = function () {
         console.log("Marital status : " + this.isMarried);

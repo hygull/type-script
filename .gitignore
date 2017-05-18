@@ -8,5 +8,8 @@
 *.bat
 .git
 .git/
+.git2
+.git2/*
+.git2/
 .git/*
 add_list_of_numbers.*

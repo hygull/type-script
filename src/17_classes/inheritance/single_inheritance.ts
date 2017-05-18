@@ -1,7 +1,7 @@
 /**
     {
         "created_at" : "7 May 2017",
-        "aim_of_script" : "Using inheritance in TypeScript",
+        "aim_of_script" : "Using single inheritance in TypeScript",
         "coded_by" : "Rishikesh Agrawani",
     }
 */
