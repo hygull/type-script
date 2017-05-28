@@ -3960,6 +3960,89 @@ Sorting new array in descending order:-
 */ 
 ```
 
+### map() method - getting an array of cubes
+
+```typescript
+/**
+    {
+        "created_at": "28 May 2017",
+        "aim_of_script": "getting cubes & squares of all integers of an array in a new array",
+        "coded_by": "Rishikesh Agrawani",
+    }
+*/
+
+
+//A function that returns square of passed parameter
+var square = function(n) {
+    return n*n
+}
+
+//A function that returns cube of passed parameter
+var cube = function(n) {
+    return n*n*n
+}
+
+var arr = [1, 4, 6, 8, 9, 10, 11, 91, 99, 75]
+
+var newSquaredArr = arr.map(square)
+var newCubedArr = arr.map(cube)
+
+console.log("ARRAY:-")
+console.log(arr)
+console.log("SQUARED ARRAY:-")
+console.log(newSquaredArr)
+console.log("CUBED ARRAY:-")
+console.log(newCubedArr)
+
+/*
+ARRAY:-
+[ 1, 4, 6, 8, 9, 10, 11, 91, 99, 75 ]
+SQUARED ARRAY:-
+[ 1, 16, 36, 64, 81, 100, 121, 8281, 9801, 5625 ]
+CUBED ARRAY:-
+[ 1, 64, 216, 512, 729, 1000, 1331, 753571, 970299, 421875 ]
+*/
+```
+
+### map() method - creating 2D array (table of numbers in range[1, 10])
+
+```typescript
+/**
+    {
+        "created_at": "28 May 2017",
+        "aim_of_script": "creating tables of numbers(as a 2D array) in range [1,10] using map() method",
+        "coded_by": "Rishikesh Agrawani",
+    }
+*/
+
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+var twoDArr =   arr.map( 
+                    function(r1){
+                                    //Returning an array
+                                    return arr.map(
+                                                    function(c1){
+                                                        return r1*c1
+                                                    }
+                                            )
+                                }
+                )
+
+console.log(twoDArr)
+
+/*
+[ [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ],
+  [ 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 ],
+  [ 3, 6, 9, 12, 15, 18, 21, 24, 27, 30 ],
+  [ 4, 8, 12, 16, 20, 24, 28, 32, 36, 40 ],
+  [ 5, 10, 15, 20, 25, 30, 35, 40, 45, 50 ],
+  [ 6, 12, 18, 24, 30, 36, 42, 48, 54, 60 ],
+  [ 7, 14, 21, 28, 35, 42, 49, 56, 63, 70 ],
+  [ 8, 16, 24, 32, 40, 48, 56, 64, 72, 80 ],
+  [ 9, 18, 27, 36, 45, 54, 63, 72, 81, 90 ],
+  [ 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 ] ]
+*/
+```
 
 # Notes
 
